@@ -55,7 +55,7 @@
 export default {
   data() {
     return {
-      menuClicked: true,
+      menuClicked: false,
       categories: [
         {
           name: 'Home',

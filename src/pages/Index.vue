@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <p>index page</p>
+    <app-typed-intro />
   </Layout>
 </template>
 
@@ -17,3 +17,13 @@ export default {
   margin-right: 1rem;
 }
 </style>
+
+<script>
+// typed intro
+import TypedIntro from '~/components/TypedIntro.vue'
+export default {
+  components: {
+    'app-typed-intro': TypedIntro
+  }
+}
+</script>
