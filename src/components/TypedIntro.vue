@@ -10,7 +10,10 @@
 <script>
 export default {
   mounted() {
-    const theater = require('theaterjs/dist/theater.min.js')()
+    const theater = require('theaterjs/dist/theater.min.js')({
+      minSpeed: 20,
+      maxSpeed: 450
+    })
     theater
       .on('type:start, erase:start', function() {
         // add a class to actor's dom element when he starts typing/erasing
@@ -23,16 +26,17 @@ export default {
 
     theater
       .addActor('aboutme', { accuracy: 1, speed: 0.6 })
-      .addScene('aboutme:Hi! I`m', 500, -2, "'m ")
-      .addScene('<span class="text-primary">Ramana Reddy</span> <br>and I\'m')
-      .addScene(' good at <span class="text-sklearn">Machine Learning.</span>')
-      .addScene(500, -17)
+      .addScene(500, 'aboutme:Hi! I`m', 500, -2, "'m ")
+      .addScene('<span class="text-primary">Ramana Reddy,</span> <br>')
+      .addScene(500, 'an adept at ')
+      .addScene('<span class="text-sklearn">Machine Learning.</span>')
+      .addScene(1000, -17)
       .addScene('<span class="text-tensorflow">Computer Vision.</span>')
-      .addScene(500, -16)
-      .addScene('<span class="text-vuejs">Vue JS.</span>')
-      .addScene(500, -7)
-      .addScene('<span class="text-django">Django.</span>')
-      .addScene(1000, theater.replay)
+      .addScene(1000, -16)
+      .addScene('<span class="text-vuejs">Front-end Development.</span>')
+      .addScene(1000, -22)
+      .addScene('<span class="text-django">Software Development.</span>')
+      .addScene(1000, 'aboutme:', theater.replay)
   }
 }
 </script>
