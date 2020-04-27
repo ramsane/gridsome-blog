@@ -1,14 +1,16 @@
 <template>
+  <!-- body and header -->
   <div>
     <div
-      class="transition duration-300"
+      class="transition duration-300 lg:translate-x-0"
       :class="{ '-translate-x-2/3 transform sm:-translate-x-1/3': menuClicked }"
     >
-      <header class="flex justify-between items-center px-4 py-2">
+      <header
+        class="flex justify-between items-center px-4 py-2 lg:max-w-screen-xl lg:mx-auto"
+      >
         <!-- link to home page with logo -->
         <g-link to="/">
           <svg
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
             class="text-primary fill-current w-10 h-10"
           >
@@ -17,21 +19,31 @@
             />
           </svg>
         </g-link>
+        <nav class="hidden flex-grow lg:flex justify-end">
+          <g-link
+            v-for="category in categories"
+            :key="category.name"
+            :to="category.path"
+            class="hover:text-primary mx-5 text-xl"
+            exact-active-class="text-primary"
+          >
+            {{ category.name }}
+          </g-link>
+        </nav>
         <!-- hamberger menu -->
         <svg
           @click="menuClicked = !menuClicked"
           xmlns="http://www.w3.org/2000/svg"
-          class="text-gray-800 stroke-current stroke-2 h-10 w-12 cursor-pointer"
+          class="text-gray-800 stroke-current stroke-2 h-10 w-12 cursor-pointer lg:hidden"
         >
           <path d="M5 20h40M5 30h40M5 10h40" />
         </svg>
       </header>
       <slot />
     </div>
-
     <!-- side nav -->
     <nav
-      class="fixed top-0 right-0 h-full w-2/3 transition duration-300 transform divide-y divide-gray-400 sm:w-1/3"
+      class="fixed top-0 right-0 h-full w-2/3 transition duration-300 transform  sm:w-1/3 lg:translate-x-full"
       :class="{ 'translate-x-full': !menuClicked }"
     >
       <div

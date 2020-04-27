@@ -1,6 +1,8 @@
 <template>
   <Layout>
-    <div class="space-y-2 md:flex flex-row-reverse items-center">
+    <div
+      class="space-y-2 md:flex flex-row-reverse items-center container mx-auto"
+    >
       <app-avatar class="w-full max-w-md mx-auto" />
       <app-typed-intro
         class="text-center w-full max-w-md mx-auto my-auto h-full"
