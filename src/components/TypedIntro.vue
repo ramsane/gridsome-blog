@@ -1,7 +1,7 @@
 <template>
   <div
     id="aboutme"
-    class="is-typing text-lg font-semibold sm:text-lg md:text-xl lg:text-3xl"
+    class="is-typing text-lg font-novasquare sm:text-lg md:text-xl lg:text-3xl"
   ></div>
 </template>
 

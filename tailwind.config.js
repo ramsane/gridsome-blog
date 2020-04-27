@@ -11,9 +11,15 @@ module.exports = {
       translate: {
         '-2/3': '-66.666667%',
         '-1/3': '-33.333334%'
+      },
+      fontFamily: {
+        novasquare: ['Nova Square'],
+        novaflat: ['Nova Flat'],
+        novaround: ['Nova Round'],
+        roboto: ['Roboto']
       }
-    },
+    }
   },
   variants: {},
-  plugins: [],
+  plugins: []
 }

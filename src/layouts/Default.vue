@@ -24,7 +24,7 @@
             v-for="category in categories"
             :key="category.name"
             :to="category.path"
-            class="hover:text-primary mx-5 text-xl"
+            class="hover:text-primary mx-5 text-xl tracking-wide font-roboto"
             exact-active-class="text-primary"
           >
             {{ category.name }}
@@ -53,7 +53,7 @@
       >
         <g-link
           :to="category.path"
-          class="hover:text-primary block w-3/4 mx-auto"
+          class="hover:text-primary block w-3/4 mx-auto font-roboto tracking-wide"
           exact-active-class="text-primary"
         >
           {{ category.name }}
