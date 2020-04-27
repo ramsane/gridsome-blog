@@ -1,6 +1,11 @@
 <template>
   <Layout>
-    <app-typed-intro />
+    <div class="space-y-2 md:flex flex-row-reverse items-center">
+      <app-avatar class="w-full max-w-md mx-auto" />
+      <app-typed-intro
+        class="text-center w-full max-w-md mx-auto my-auto h-full"
+      />
+    </div>
   </Layout>
 </template>
 
@@ -21,9 +26,11 @@ export default {
 <script>
 // typed intro
 import TypedIntro from '~/components/TypedIntro.vue'
+import Avatar from '~/components/Avatar.vue'
 export default {
   components: {
-    'app-typed-intro': TypedIntro
+    'app-typed-intro': TypedIntro,
+    'app-avatar': Avatar
   }
 }
 </script>

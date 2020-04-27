@@ -1,10 +1,10 @@
 <template>
   <div>
     <div
-      class="transition duration-300 transform "
-      :class="{ '-translate-x-2/3': menuClicked }"
+      class="transition duration-300"
+      :class="{ '-translate-x-2/3 transform sm:-translate-x-1/3': menuClicked }"
     >
-      <header class="flex justify-between items-center bg-gray-900 px-4 py-2">
+      <header class="flex justify-between items-center px-4 py-2">
         <!-- link to home page with logo -->
         <g-link to="/">
           <svg
@@ -21,7 +21,7 @@
         <svg
           @click="menuClicked = !menuClicked"
           xmlns="http://www.w3.org/2000/svg"
-          class="text-gray-300 stroke-current stroke-2 h-10 w-12 cursor-pointer"
+          class="text-gray-800 stroke-current stroke-2 h-10 w-12 cursor-pointer"
         >
           <path d="M5 20h40M5 30h40M5 10h40" />
         </svg>
@@ -31,7 +31,7 @@
 
     <!-- side nav -->
     <nav
-      class="fixed top-0 right-0 h-full w-2/3 transition duration-300 transform divide-y divide-gray-400"
+      class="fixed top-0 right-0 h-full w-2/3 transition duration-300 transform divide-y divide-gray-400 sm:w-1/3"
       :class="{ 'translate-x-full': !menuClicked }"
     >
       <div

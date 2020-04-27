@@ -1,10 +1,5 @@
 <template>
-  <div>
-    <div
-      id="aboutme"
-      class="is-typing text-xl w-full text-center font-semibold"
-    ></div>
-  </div>
+  <div id="aboutme" class="is-typing text-xl font-semibold md:text-2xl"></div>
 </template>
 
 <script>
@@ -24,9 +19,16 @@ export default {
         theater.getCurrentActor().$element.classList.remove('is-typing')
       })
 
+    // theater
+    //   .addActor('aboutme', { accuracy: 1, speed: 1 })
+    //   .addScene("aboutme:Hi! I'm ")
+    //   .addScene('<span class="text-primary">Ramana Reddy,</span> <br>')
+    //   .addScene('an adept at ')
+    //   .addScene('<span class="text-sklearn">Machine Learning.</span>')
+
     theater
-      .addActor('aboutme', { accuracy: 1, speed: 0.6 })
-      .addScene(500, 'aboutme:Hi! I`m', 500, -2, "'m ")
+      .addActor('aboutme', { accuracy: 1, speed: 0.5 })
+      .addScene(500, 'aboutme:Hi!', 500, ' I`m', 500, -2, "'m ")
       .addScene('<span class="text-primary">Ramana Reddy,</span> <br>')
       .addScene(500, 'an adept at ')
       .addScene('<span class="text-sklearn">Machine Learning.</span>')
