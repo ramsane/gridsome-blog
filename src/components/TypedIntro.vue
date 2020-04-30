@@ -1,7 +1,7 @@
 <template>
   <div
     id="aboutme"
-    class="is-typing text-lg font-novasquare sm:text-lg md:text-xl lg:text-3xl"
+    class="is-typing text-lg font-novasquare md:text-xl lg:text-3xl"
   ></div>
 </template>
 
@@ -34,7 +34,7 @@ export default {
       .addScene('a decent <span class="text-django">Software Developer.</span>')
       .addScene(1000, -19)
       .addScene('<span class="text-vuejs">Front-end developer</span>')
-      .addScene(1000, 'aboutme:', theater.replay)
+    // .addScene(1000, 'aboutme:', theater.replay)
   }
 }
 </script>

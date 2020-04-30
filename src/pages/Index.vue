@@ -5,7 +5,7 @@
     >
       <app-avatar class="w-full max-w-md mx-auto" />
       <app-typed-intro
-        class="text-center w-full max-w-md mx-auto my-auto h-full"
+        class="text-center w-full max-w-md mx-auto my-auto border h-16 md:h-auto"
       />
     </div>
   </Layout>
