@@ -15,7 +15,13 @@ module.exports = {
       options: {
         tailwindConfig: './tailwind.config.js',
         purgeConfig: {},
-        presetEnvConfig: {},
+        presetEnvConfig: {
+          /* use stage 3 features + css nesting rules */
+          stage: 3,
+          features: {
+            "nesting-rules": true
+          }
+        },
         shouldPurge: true, // default
         shouldImport: true, // default
         shouldTimeTravel: true // default

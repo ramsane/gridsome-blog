@@ -4,7 +4,7 @@
     <div class="transition duration-300 lg:translate-x-0"
       :class="{ '-translate-x-2/3 transform sm:-translate-x-1/3': menuClicked }" >
       <!-- header -->
-      <div class="bg-gray-900 text-gray-500">
+      <div class="text-gray-600" :class="[bgColor]"> 
         <header class="flex justify-between items-center px-4 py-2 lg:max-w-screen-xl lg:mx-auto">
           <!-- link to home page with logo -->
           <g-link to="/">
@@ -65,8 +65,8 @@
     </div>
     <!-- side nav -->
     <nav
-      class="fixed top-0 right-0 h-full w-2/3 transition duration-300 transform  sm:w-1/3 lg:translate-x-full bg-gray-900 text-gray-500"
-      :class="{ 'translate-x-full': !menuClicked }"
+      class="fixed top-0 right-0 h-full w-2/3 transition duration-300 transform  sm:w-1/3 lg:translate-x-full text-gray-600 text-xl"
+      :class="[{'translate-x-full': !menuClicked}, bgColor]"
     >
       <div
         v-for="category in categories"
@@ -92,6 +92,17 @@ import linkedin from "~/assets/svgs/linkedin.svg";
 import github from "~/assets/svgs/github.svg";
 
 export default {
+  props: {
+    home: {
+      type: Boolean,
+      default: false
+    }
+  },
+  computed: {
+    bgColor() {
+      return this.home ? "bg-gray-900" : "bg-white";
+    }
+  },
   data() {
     return {
       menuClicked: false,

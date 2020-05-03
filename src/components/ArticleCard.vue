@@ -1,5 +1,5 @@
 <template>
-  <div class="article-card bg-blue">
+  <div class="article-card">
     <!-- category title -->
     <div class="text-xl text-gray-500 pl-1 font-novaround">
         <g-link class="transition duration-200 border-above inline-block hover:text-primary-500" :to="article.category.path">
@@ -14,12 +14,12 @@
     <g-link :to="article.path" class="transition duration-200 block font-novaflat text-2xl leading-7 mt-4 hover:text-primary-500">
       {{article.title}}
     </g-link>
-    <div class="text-xs font-roboto text-gray-600">
+    <div class="text-xs font-roboto text-gray-700">
         on <span class="font-semibold">{{$formatDate(article.date)}} </span>
         by <span class="font-semibold">{{article.author.title}}</span>
     </div>
     <!-- excerpt -->
-    <div class="mt-4 font-roboto text-gray-800 text-sm">{{article.excerpt}}</div>
+    <div class="excerpt">{{article.excerpt}}</div>
     <!-- tags -->
     <div class="mt-4 font-roboto text-gray-700 text-sm">
       <span v-for="tag in article.tags" :key="tag.id" class="tag">

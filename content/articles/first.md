@@ -9,7 +9,7 @@ excerpt: The file explorer is accessible using the button in left corner of the 
 date: 2017-09-22
 ---
 
-# Welcome to StackEdit! - First heading
+# Welcome to StackEdit!! - First heading
 
 The example for an inline math expression is $ (a+b)^2 = a^2 + 2ab + b^2 $.
 
@@ -19,7 +19,6 @@ $$
 (a+b)^2 = a^2 + 2ab + b^2
 $$
 
-`youtube:https://www.youtube.com/watch?v=dQw4w9WgXcQ`
 
 Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
 
@@ -34,3 +33,5 @@ The file explorer is accessible using the button in left corner of the navigatio
 ### Switch to another file - Fourth heading
 
 All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.
+
+`youtube:https://www.youtube.com/watch?v=dQw4w9WgXcQ`

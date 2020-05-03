@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout :home="true">
     <!-- Intro section -->
   <div class="bg-gray-900 text-white lg:pb-32">
     <div class="space-y-2 md:flex flex-row-reverse mx-auto lg:max-w-screen-lg items-center" >
@@ -10,8 +10,8 @@
 
     <!-- latest articles -->
     <div class="bg-white max-w-screen-xl mx-auto lg:-mt-24 rounded-t-md shadow">
-      <span class="font-novaflat text-2xl block text-center p-4 lg:border-b md:text-left">
-        Latest Articles
+      <span class="font-novaflat text-2xl block text-center p-4">
+        <span class="border-below inline-block">Latest Articles</span>
       </span>
       <!-- Article Card -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">

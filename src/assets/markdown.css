@@ -1,0 +1,59 @@
+.markdown {
+  /* global styles */
+  @apply font-roboto leading-normal text-gray-900;
+
+  & > * + *,  & li + li, & li > p + p {
+    @apply mt-4;
+  }
+
+  /* headings */
+  & h1, & h2{
+    @apply leading-tight font-medium mb-2 mt-6;
+  }
+  & h1{ @apply text-2xl; }
+  & h2{ @apply text-xl; }
+  & h3, & h4{
+    @apply leading-tight font-medium mt-4 -mb-2;
+  }
+  & h3 { @apply text-lg; }
+  & h4 { @apply text-base; }
+  
+  /* links  */
+  & strong {
+    @apply text-black font-bold;
+  }
+  & a {
+    @apply text-primary-400;
+  }
+  & a:hover{ 
+    @apply text-primary-600;
+  }
+  & strong a {
+    @apply font-bold;
+  }
+
+  /* code snippets */
+  & code {
+    @apply font-mono text-sm inline px-1 overflow-x-auto;
+  }
+  & pre code {
+    @apply block  p-4 rounded;
+  }
+
+  /* math  equations */
+  & .katex-display {
+    overflow: auto
+  }
+
+  /* quotes */
+  & blockquote {
+    @apply border-l-4 pl-4 italic;
+  }
+  /* lists */
+  & ul, & ol {
+    @apply pl-5;
+    @screen sm {
+      @apply pl-10;
+    }
+  }
+}
