@@ -19,3 +19,16 @@
 .excerpt {
     @apply my-4 font-roboto text-gray-700 text-sm leading-relaxed;
 }
+
+/* scroll bar - webkit browsers*/
+::-webkit-scrollbar {
+    @apply h-2 w-2;
+}
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-400 rounded-full;
+}
+/* scroll bar - firefox browsers */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: gray;
+}
