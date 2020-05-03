@@ -7,13 +7,22 @@ require('typeface-nova-round')
 require('typeface-nova-flat')
 require('typeface-roboto')
 
+import formatDate from '~/assets/js/formatdate'
+
 // import global css
 import '~/assets/styles.css'
 
 // import katex - for rendering math
 import 'katex/dist/katex.min.css'
 
-export default function(Vue, { router, head, isClient }) {
+export default function (Vue, {
+  router,
+  head,
+  isClient
+}) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
+
+  // add formatDate as prototype
+  Vue.prototype.$formatDate = formatDate
 }

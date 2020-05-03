@@ -6,8 +6,7 @@
 
 module.exports = {
   siteName: 'Gridsome',
-  plugins: [
-    {
+  plugins: [{
       use: 'gridsome-plugin-tailwindcss',
       /**
        * These are the default options. You don't need to set any options to get
@@ -47,7 +46,10 @@ module.exports = {
         // remark plugins
         plugins: [
           'gridsome-remark-katex',
-          ['gridsome-plugin-remark-youtube', { width: '50%', align: 'auto' }]
+          ['gridsome-plugin-remark-youtube', {
+            width: '50%',
+            align: 'auto'
+          }]
         ]
       }
     }
@@ -55,23 +57,26 @@ module.exports = {
 
   // templates for each collection  -- doesn't work if collections are from vue-remark (YET)
   templates: {
-    Tag: [
-      {
-        path: '/tag/:title',
-        component: './src/templates/Tag.vue'
-      }
-    ],
-    Category: [
-      {
-        path: '/category/:slug',
-        component: './src/templates/Category.vue'
-      }
-    ],
-    Author: [
-      {
-        path: '/author/:slug',
-        component: './src/templates/Author.vue'
-      }
-    ]
+    Tag: [{
+      path: '/tag/:title',
+      component: './src/templates/Tag.vue'
+    }],
+    Category: [{
+      path: '/category/:slug',
+      component: './src/templates/Category.vue'
+    }],
+    Author: [{
+      path: '/author/:slug',
+      component: './src/templates/Author.vue'
+    }]
+  },
+
+  // for svg loader
+  chainWebpack: config => {
+    const svgRule = config.module.rule('svg')
+    svgRule.uses.clear()
+    svgRule
+      .use('vue-svg-loader')
+      .loader('vue-svg-loader')
   }
 }

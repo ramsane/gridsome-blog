@@ -18,6 +18,7 @@
     "typeface-roboto": "0.0.75"
   },
   "devDependencies": {
-    "gridsome-plugin-tailwindcss": "^2.2.46"
+    "gridsome-plugin-tailwindcss": "^2.2.46",
+    "vue-svg-loader": "^0.16.0"
   }
 }
