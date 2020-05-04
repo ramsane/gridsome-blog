@@ -19,12 +19,12 @@
         by <span class="font-semibold">{{article.author.title}}</span>
     </div>
     <!-- excerpt -->
-    <div class="excerpt">{{article.excerpt}}</div>
+    <div class="excerpt text-sm">{{article.excerpt}}</div>
     <!-- tags -->
     <div class="mt-4 font-roboto text-gray-700 text-sm">
       <span v-for="tag in article.tags" :key="tag.id" class="tag">
         <g-link :to="tag.path" class="inline-block px-2 hover:text-primary-500">{{tag.title}}</g-link>
-        <span class="saperator text-gray-500">&#x25CF;</span>
+        <!-- <span class="saperator text-gray-500">&#x25CF;</span> -->
       </span>
     </div>
   </div>

@@ -1,6 +1,6 @@
 .markdown {
   /* global styles */
-  @apply font-roboto leading-relaxed text-gray-900;
+  @apply font-roboto leading-relaxed text-gray-800 text-lg;
 
   & > * + *,  & li + li, & li > p + p {
     @apply mt-4;
@@ -17,6 +17,13 @@
   }
   & h3 { @apply text-lg; }
   & h4 { @apply text-base; }
+  /* headings for large devices */
+  @media (width >= 1024px) {
+    & h1{ @apply text-3xl; }
+    & h2{ @apply text-2xl; }
+    & h3 { @apply text-xl; }
+    & h4 { @apply text-lg; }
+  }
   
   /* links  */
   & strong {

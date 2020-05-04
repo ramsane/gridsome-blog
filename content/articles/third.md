@@ -351,6 +351,8 @@ This is [an example](http://example.com/) inline link.
 
 [This link](http://example.net/) has no title attribute.
 
+`youtube:https://www.youtube.com/watch?v=dQw4w9WgXcQ`
+
 ### Emphasis
 
 Markdown treats asterisks (`*`) and underscores (`_`) as indicators of
@@ -373,5 +375,3 @@ Unlike a pre-formatted code block, a code span indicates code within a
 normal paragraph. For example:
 
 Use the `printf()` function.
-
-`youtube:https://www.youtube.com/watch?v=dQw4w9WgXcQ`

@@ -7,11 +7,11 @@
         ◀ Back
       </div>
       
-      <div class="md:flex items-center md:space-x-4 justify-evenly">
+      <div class="lg:flex items-center lg:space-x-4">
         <!-- text  -->
-        <div class="md:w-1/2 md:max-w-lg">
+        <div class="max-w-screen-md mx-auto lg:max-w-md lg:mr-4">
           <!-- date - category -->
-          <div class='text-xs font-roboto font-medium text-gray-700'>
+          <div class='text-sm font-roboto font-medium text-gray-700'>
             <span>{{$formatDate($page.article.date)}}</span>
             <span class=" inline-block px-2">—</span>
             <g-link class="font-novaround text-primary-400 hover:text-primary-500">
@@ -19,14 +19,14 @@
             </g-link>
           </div>
           <!-- title -->
-          <div class="leading-tight font-novaflat text-3xl text-gray-900">
+          <div class="leading-tight font-novaflat text-3xl text-gray-900 lg:text-4xl">
             {{ $page.article.title }}
           </div>
           <!-- excerpt -->
-          <div class="excerpt">{{$page.article.excerpt}}</div>
+          <div class="excerpt text-sm lg:text-base">{{$page.article.excerpt}}</div>
         </div>
         <!-- image -->
-        <div class="md:w-1/2 md:max-w-screen-lg">
+        <div class="mx-auto lg:w-1/2">
           <g-image :src="$page.article.image" 
           class="rounded-md w-full h-full object-cover" />        
         </div>
@@ -34,14 +34,19 @@
 
     </div>
     <!-- content -->
-    <VueRemarkContent  class="markdown p-4"/>
+    
+    <div class="p-4 max-w-screen-md mx-auto mt-8">
+      <VueRemarkContent  class="markdown"/>
+      <!-- tags -->
+      <div class="mt-4 text-gray-700 mt-8">
+        <span v-for="tag in $page.article.tags" :key="tag.id" class="tag">
+          <g-link :to="tag.path" class="inline-block px-2 text-primary-400 hover:text-primary-600">{{tag.title}}</g-link>
+          <!-- <span class="saperator text-gray-500">&#x25CF;</span> -->
+        </span>
+      </div>
+    </div>
     <!-- Tags:
     < class="pl-4">
-      <li v-for="tag in $page.article.tags" :key="tag.id">
-        <g-link :to="tag.path" class="text-orange-500 hover:text-orange-800">{{
-          tag.title
-        }}</g-link>
-      </li>
     <br/>
     Author:
         <g-link :to="$page.article.author.path" class="text-orange-500 hover:text-orange-800">
@@ -50,7 +55,7 @@
     <!-- <pre>
       {{$page.article}}
     </pre> -->
-    <span class="block mt-64"></span>
+    <span class="block mt-16"></span>
   </Layout>
 </template>
 

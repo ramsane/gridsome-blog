@@ -17,7 +17,7 @@
 
 /* for excerpt */
 .excerpt {
-    @apply my-4 font-roboto text-gray-700 text-sm leading-relaxed;
+    @apply my-4 font-roboto text-gray-600 leading-relaxed;
 }
 
 /* scroll bar - webkit browsers*/
@@ -38,3 +38,13 @@
     scrollbar-width: thin;
     scrollbar-color:  theme('colors.primary.400')  theme('colors.gray.100');
 }
+
+/* for text selection */
+  ::selection { /* Code for webkit browsers */
+    @apply bg-primary-500 text-white;
+  }
+  
+  /* ::selection {
+    color: red;
+    background: yellow;
+  } */
