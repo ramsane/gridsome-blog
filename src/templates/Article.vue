@@ -1,27 +1,40 @@
 <<template>
   <Layout>
-    <div class="bg-white p-2 pt-6">
+    <!-- header with title, image and excerpt -->
+    <div class="p-4 font-roboto max-w-screen-xl mx-auto">
       <!-- back -->
-      <div class="capitalize tracking-widest text-gray-500 font-roboto font-medium">◀ back</div>
+      <div class="my-2 tracking-widest text-gray-500 font-medium">
+        ◀ Back
+      </div>
       
-      <!-- date - category -title - excerpt -->
-      <div class="bg-white  my-4">
-        <div class='text-xs font-roboto font-medium text-gray-700'>
-          <span>{{$formatDate($page.article.date)}}</span>
-          <span class="inline-block px-2">—</span>
-          <g-link class="font-novaround text-primary-400 hover:text-primary-500">
-            {{$page.article.category.title}}
-          </g-link>
-          <div class="leading-tight font-novaflat text-3xl text-gray-900">{{ $page.article.title }}</div>
+      <div class="md:flex items-center md:space-x-4 justify-evenly">
+        <!-- text  -->
+        <div class="md:w-1/2 md:max-w-lg">
+          <!-- date - category -->
+          <div class='text-xs font-roboto font-medium text-gray-700'>
+            <span>{{$formatDate($page.article.date)}}</span>
+            <span class=" inline-block px-2">—</span>
+            <g-link class="font-novaround text-primary-400 hover:text-primary-500">
+              {{$page.article.category.title}}
+            </g-link>
+          </div>
+          <!-- title -->
+          <div class="leading-tight font-novaflat text-3xl text-gray-900">
+            {{ $page.article.title }}
+          </div>
+          <!-- excerpt -->
+          <div class="excerpt">{{$page.article.excerpt}}</div>
+        </div>
+        <!-- image -->
+        <div class="md:w-1/2 md:max-w-screen-lg">
+          <g-image :src="$page.article.image" 
+          class="rounded-md w-full h-full object-cover" />        
         </div>
       </div>
-      <!-- excerpt -->
-      <div class="excerpt">{{$page.article.excerpt}}</div>
-      <!-- image -->
-      <g-image :src="$page.article.image" class="my-4 rounded-sm w-full h-full bg-red-400 shadow"></g-image>        
+
     </div>
     <!-- content -->
-    <VueRemarkContent  class="markdown bg-white p-2"/>
+    <VueRemarkContent  class="markdown p-4"/>
     <!-- Tags:
     < class="pl-4">
       <li v-for="tag in $page.article.tags" :key="tag.id">

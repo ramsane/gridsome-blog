@@ -1,6 +1,6 @@
 <template>
   <!-- body and header -->
-  <div class="bg-gray-100">
+  <div class="bg-white">
     <div class="transition duration-300 lg:translate-x-0"
       :class="{ '-translate-x-2/3 transform sm:-translate-x-1/3': menuClicked }" >
       <!-- header -->

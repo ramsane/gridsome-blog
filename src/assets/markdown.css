@@ -1,6 +1,6 @@
 .markdown {
   /* global styles */
-  @apply font-roboto leading-normal text-gray-900;
+  @apply font-roboto leading-relaxed text-gray-900;
 
   & > * + *,  & li + li, & li > p + p {
     @apply mt-4;

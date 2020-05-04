@@ -22,13 +22,19 @@
 
 /* scroll bar - webkit browsers*/
 ::-webkit-scrollbar {
-    @apply h-2 w-2;
+    @apply h-1 w-1;
 }
 ::-webkit-scrollbar-thumb {
-    @apply bg-gray-400 rounded-full;
+    @apply bg-gray-300 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-500;
+}
+::-webkit-scrollbar-thumb:active {
+    @apply bg-primary-500;
 }
 /* scroll bar - firefox browsers */
 * {
     scrollbar-width: thin;
-    scrollbar-color: gray;
+    scrollbar-color:  theme('colors.primary.400')  theme('colors.gray.100');
 }
