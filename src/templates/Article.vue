@@ -79,19 +79,11 @@ query Article($id: ID!){
 </page-query>
 
 <script>
-// for imaze zooming
-import mediumZoom from "medium-zoom";
-
 export default {
   metaInfo() {
     return {
       title: this.$page.article.title
     };
-  },
-  mounted() {
-    mediumZoom("img", {
-      margin: 4
-    });
   }
 };
 </script>

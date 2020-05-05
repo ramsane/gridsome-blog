@@ -11,7 +11,6 @@
     "gridsome": "^0.7.0",
     "gridsome-plugin-remark-youtube": "^1.0.1",
     "gridsome-remark-katex": "^0.1.1",
-    "medium-zoom": "^1.0.5",
     "theaterjs": "^3.2.0",
     "typeface-nova-flat": "0.0.71",
     "typeface-nova-round": "0.0.71",
