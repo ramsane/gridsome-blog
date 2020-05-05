@@ -35,7 +35,7 @@
     </div>
     <!-- content -->
     
-    <div class="p-4 max-w-screen-md mx-auto mt-8">
+    <div class="content p-4 max-w-screen-md mx-auto mt-8">
       <VueRemarkContent  class="markdown"/>
       <!-- tags -->
       <div class="mt-4 text-gray-700 mt-8">
@@ -77,12 +77,21 @@ query Article($id: ID!){
   }
 }
 </page-query>
+
 <script>
+// for imaze zooming
+import mediumZoom from "medium-zoom";
+
 export default {
   metaInfo() {
     return {
       title: this.$page.article.title
     };
+  },
+  mounted() {
+    mediumZoom("img", {
+      margin: 4
+    });
   }
 };
 </script>

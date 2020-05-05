@@ -1,4 +1,5 @@
 module.exports = {
+  purge: false, // enabled in config file
   theme: {
     extend: {
       colors: {

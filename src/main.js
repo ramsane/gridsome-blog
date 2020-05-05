@@ -9,11 +9,14 @@ require('typeface-roboto')
 
 import formatDate from '~/assets/js/formatdate'
 
+// for imaze zooming
+// import mediumZoom from 'medium-zoom'
+// mediumZoom(".content img", {
+//   margin: 4
+// });
+
 // import global css
 import '~/assets/styles.css'
-
-// import katex - for rendering math
-import 'katex/dist/katex.min.css'
 
 export default function (Vue, {
   router,
@@ -25,4 +28,9 @@ export default function (Vue, {
 
   // add formatDate as prototype
   Vue.prototype.$formatDate = formatDate
+
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css'
+  })
 }

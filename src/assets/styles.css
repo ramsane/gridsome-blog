@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .border-above::before {
     height: 2px;
     content: '';
@@ -21,16 +25,16 @@
 }
 
 /* scroll bar - webkit browsers*/
-::-webkit-scrollbar {
-    @apply h-1 w-1;
+*::-webkit-scrollbar {
+    @apply h-2 w-2;
 }
-::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     @apply bg-gray-300 rounded-full;
 }
-::-webkit-scrollbar-thumb:hover {
+*::-webkit-scrollbar-thumb:hover {
     @apply bg-gray-500;
 }
-::-webkit-scrollbar-thumb:active {
+*::-webkit-scrollbar-thumb:active {
     @apply bg-primary-500;
 }
 /* scroll bar - firefox browsers */
@@ -40,11 +44,15 @@
 }
 
 /* for text selection */
-  ::selection { /* Code for webkit browsers */
-    @apply bg-primary-500 text-white;
-  }
-  
-  /* ::selection {
-    color: red;
-    background: yellow;
-  } */
+::selection { /* Code for webkit browsers */
+@apply bg-primary-500 text-white;
+}
+
+/* katex */
+/* .katex-display {
+    overflow: auto
+} */
+
+.katex-display {
+    overflow: auto;
+}

@@ -14,7 +14,9 @@ module.exports = {
        */
       options: {
         tailwindConfig: './tailwind.config.js',
-        purgeConfig: {},
+        purgeConfig: {
+          whitelistPatterns: [/.*katex.*/]
+        },
         presetEnvConfig: {
           /* use stage 3 features + css nesting rules */
           stage: 3,

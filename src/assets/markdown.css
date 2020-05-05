@@ -47,11 +47,6 @@
     @apply block  p-4 rounded;
   }
 
-  /* math  equations */
-  & .katex-display {
-    overflow: auto
-  }
-
   /* quotes */
   & blockquote {
     @apply border-l-4 pl-4 italic;

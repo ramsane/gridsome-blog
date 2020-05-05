@@ -88,7 +88,6 @@ $$
 \blue \z13
 \end{pmatrix} 
 %============
-
 $$
 
 Markdown is intended to be as easy-to-read and easy-to-write as is feasible.Readability, however, is emphasized above all else. A Markdown-formatted
@@ -351,7 +350,7 @@ This is [an example](http://example.com/) inline link.
 
 [This link](http://example.net/) has no title attribute.
 
-`youtube:https://www.youtube.com/watch?v=dQw4w9WgXcQ`
+<!-- `youtube:https://www.youtube.com/watch?v=dQw4w9WgXcQ` -->
 
 ### Emphasis
 
