@@ -79,11 +79,20 @@ query Article($id: ID!){
 </page-query>
 
 <script>
+import mediumZoom from "medium-zoom";
 export default {
   metaInfo() {
     return {
       title: this.$page.article.title
     };
+  },
+  mounted() {
+    // when we revisit the page, we need to register it
+    mediumZoom(".markdown img");
+  },
+  updated() {
+    // register everytime we refresh the page..
+    mediumZoom(".markdown img");
   }
 };
 </script>
