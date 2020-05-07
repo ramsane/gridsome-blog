@@ -10,9 +10,8 @@
 
     <!-- latest articles -->
     <div class="bg-white max-w-screen-xl mx-auto lg:-mt-24 rounded-t-md shadow">
-      <span class="font-novaflat text-2xl block text-center p-4">
-        <span class="border-below inline-block">Latest Articles</span>
-      </span>
+      <!-- title with below border -->
+      <rs-title>Latest Articles</rs-title>
       <!-- Article Card -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <app-article-card  v-for="edge in $page.articles.edges" :key="edge.node.id"
@@ -20,7 +19,7 @@
       </div>
       <!-- all articles link -->
       <div class="text-center my-4 text-xl font-novaround">
-        <g-link to="/" class="text-primary-400 hover:text-primary-600 inline-block py-4 px-2">
+        <g-link to="/articles" class="text-primary-400 hover:text-primary-600 inline-block py-4 px-2">
           see all articles
         </g-link>
       </div>
