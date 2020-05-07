@@ -2,6 +2,21 @@
   /* global styles */
   @apply font-roboto leading-relaxed text-gray-800 text-lg;
 
+  & > * {
+    @apply max-w-screen-md mx-auto;
+  }
+
+  /* math  */
+  & > span.katex-display, & > img.g-image {
+    @apply max-w-screen-lg mx-auto;
+  }
+  /* to make sure the image is within the container */
+  @media (width <= 768px) {
+    & > img.g-image {
+      @apply w-full;
+    }
+  }
+  
   & > * + *,  & li + li, & li > p + p {
     @apply mt-4;
   }

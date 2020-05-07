@@ -131,7 +131,7 @@ determines the header level.)
 
 Images are added with `![Image Alt](./images/tf.jpg)`
 
-![Image](./images/tf.jpg)
+<g-image src="./images/tf.jpg" alt="Image"/>
 
 ### Blockquotes
 

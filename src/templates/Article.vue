@@ -35,10 +35,11 @@
     </div>
     <!-- content -->
     
-    <div class="content p-4 max-w-screen-md mx-auto mt-8">
+    <div class="p-4 mt-8 max-w-screen-xl mx-auto">
       <VueRemarkContent  class="markdown"/>
       <!-- tags -->
-      <div class="mt-4 text-gray-700 mt-8">
+      <!-- TODO: use slots for this tags and use it in the markdown file -->
+      <div class="mt-4 text-gray-700 mt-8 max-w-screen-md mx-auto">
         <span v-for="tag in $page.article.tags" :key="tag.id" class="tag">
           <g-link :to="tag.path" class="inline-block px-2 text-primary-400 hover:text-primary-600">{{tag.title}}</g-link>
           <!-- <span class="saperator text-gray-500">&#x25CF;</span> -->
