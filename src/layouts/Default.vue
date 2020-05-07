@@ -1,7 +1,7 @@
 <template>
   <!-- body and header -->
   <div class="bg-white">
-    <div class="transition duration-300 lg:translate-x-0"
+    <div class="transition duration-300 lg:translate-x-0 min-h-screen relative"
       :class="{ '-translate-x-2/3 transform sm:-translate-x-1/3': menuClicked }" >
       <!-- header -->
       <div class="text-gray-600" :class="[bgColor]"> 
@@ -35,9 +35,11 @@
         </header>
       </div>
       <!-- content -->
-      <slot />
+      <div class="pb-24">
+        <slot />
+      </div>
       <!-- footer -->
-      <div class="bg-gray-900 text-gray-500">
+      <div class="bg-gray-900 text-gray-500 absolute w-full bottom-0">
         <div class="max-w-screen-lg mx-auto py-8 px-4 space-y-6 flex flex-col md:flex-row md:space-y-0 items-center justify-between">
           <!-- copy rights -->
           <div>
@@ -109,11 +111,11 @@ export default {
       categories: [
         {
           name: "Home",
-          path: ""
+          path: "/"
         },
         {
           name: "Articles",
-          path: "/art"
+          path: "/articles"
         },
         {
           name: "deep learning",
