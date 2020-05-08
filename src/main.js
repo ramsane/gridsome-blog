@@ -11,6 +11,8 @@ import formatDate from '~/assets/js/formatdate'
 
 import Title from '~/components/Title.vue'
 
+import InfiniteLoading from 'vue-infinite-loading'
+
 // for imaze zooming
 // import mediumZoom from 'medium-zoom'
 // mediumZoom(".content img", {
@@ -28,6 +30,9 @@ export default function (Vue, {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   Vue.component('rs-title', Title)
+
+  // for infinite scrolling effect
+  Vue.use(InfiniteLoading)
 
   // add formatDate as prototype
   Vue.prototype.$formatDate = formatDate

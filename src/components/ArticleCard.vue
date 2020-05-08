@@ -22,9 +22,11 @@
     <!-- excerpt -->
     <div class="excerpt text-sm">{{article.excerpt}}</div>
     <!-- tags -->
-    <div class="mt-4 font-roboto text-gray-700 text-sm">
+    <div class="mt-4 font-roboto text-gray-700 text-sm select-none">
       <span v-for="tag in article.tags" :key="tag.id" class="tag">
-        <g-link :to="tag.path" class="inline-block px-2 hover:text-primary-500">{{tag.title}}</g-link>
+        <g-link :to="tag.path" class="inline-block px-2 hover:text-primary-500 active:text-primary-500">
+          {{tag.title}}
+        </g-link>
         <!-- <span class="saperator text-gray-500">&#x25CF;</span> -->
       </span>
     </div>
