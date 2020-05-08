@@ -19,7 +19,10 @@
       </div>
       <!-- all articles link -->
       <div class="text-center my-4 text-xl font-novaround">
-        <g-link to="/articles" class="text-primary-400 hover:text-primary-600 inline-block py-4 px-2">
+        <g-link to="/articles"
+         class="inline-block text-primary-500 transition-all duration-200
+          p-2 m-3  active:text-primary-600 rounded-t-md
+          border-primary-500 active:bg-gray-100 active:shadow-inner">
           see all articles
         </g-link>
       </div>

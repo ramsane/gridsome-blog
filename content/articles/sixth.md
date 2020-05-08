@@ -1,12 +1,12 @@
 ---
-title: 03. Design and code responsive skeleton screens
+title: 06. Design and code responsive skeleton screens - Part 2
 slug: third-article
 image: ./images/tf.jpg
 author: ramsane
 tags: ['t1', 't2']
 category: cv
 excerpt: The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
-date: 2017-11-22
+date:  2019-02-22
 ---
 
 # Welcome to StackEdit! - First heading

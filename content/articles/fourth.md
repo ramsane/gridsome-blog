@@ -1,12 +1,12 @@
 ---
-title: 01. First Article
+title: 04. First Article - Part 2 
 slug: first-article
 author: ramsane
 image: ./images/cv.jpg
 tags: ['t1', 't2']
 category: nlp
 excerpt: The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
-date: 2017-09-22
+date: 2017-12-22
 ---
 
 # Welcome to StackEdit!! - First heading

@@ -1,5 +1,6 @@
 <template>
-  <div class="article-card">
+  <div class="group article-card transition-all duration-200 
+  shadow-sm hover:shadow-md active:shadow-xs">
     <!-- category title -->
     <div class="text-xl text-gray-500 pl-1 font-novaround">
         <g-link class="transition duration-200 border-above inline-block hover:text-primary-500" :to="article.category.path">
@@ -7,7 +8,8 @@
         </g-link>
     </div>
     <!-- blog image -->
-    <g-link :to="article.path" class="block">
+    <g-link :to="article.path" class="transition-all duration-200 
+    block shadow-xs group-hover:shadow-xl">
       <g-image :src="article.image" class="mt-2 h-full w-full object-cover rounded-t-md" />
     </g-link>
     <!-- title, date and author -->
@@ -37,7 +39,4 @@ export default {
 </script>
 
 <style scoped>
-.article-card:hover {
-  box-shadow: 0px 0px 4px -2px;
-}
 </style>

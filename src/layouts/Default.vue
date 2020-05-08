@@ -35,7 +35,7 @@
         </header>
       </div>
       <!-- content -->
-      <div class="pb-24">
+      <div class="pb-40">
         <slot />
       </div>
       <!-- footer -->
@@ -78,7 +78,7 @@
         <g-link
           :to="category.path"
           class="hover:text-primary-500 block w-3/4 mx-auto font-roboto tracking-wide"
-          exact-active-class="text-primary-500"
+          active-class="text-primary-500"
         >
           {{ category.name }}
         </g-link>
@@ -110,16 +110,8 @@ export default {
       menuClicked: false,
       categories: [
         {
-          name: "Home",
-          path: "/"
-        },
-        {
           name: "Articles",
           path: "/articles"
-        },
-        {
-          name: "deep learning",
-          path: "/art"
         },
         {
           name: "machine learning",
