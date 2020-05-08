@@ -3,28 +3,30 @@
     <!-- header with title, image and excerpt -->
     <div class="p-4 font-roboto max-w-screen-xl mx-auto">
       <!-- back -->
-      <div class="my-2 tracking-widest text-gray-500 font-medium">
-        ◀ Back
-      </div>
+      <a class="group inline-block my-2 ml-1 transition-all duration-200 text-gray-500 font-medium tracking-wide hover:tracking-wider hover:cursor-pointer" @click="$router.go(-1)">
+        <span class="inline-block  transition-all duration-200 transform group-hover:-translate-x-1">◀</span> Back
+      </a>
       
       <div class="lg:flex items-center lg:space-x-4">
         <!-- text  -->
-        <div class="max-w-screen-md mx-auto lg:max-w-md lg:mr-4">
-          <!-- date - category -->
-          <div class='text-sm font-roboto font-medium text-gray-700'>
-            <span>{{$formatDate($page.article.date)}}</span>
-            <span class=" inline-block px-2">—</span>
-            <g-link class="font-novaround text-primary-400 hover:text-primary-500">
-              {{$page.article.category.title}}
-            </g-link>
+        <transition name="fade" appear>  
+          <div class="max-w-screen-md mx-auto lg:max-w-md lg:mr-4">
+            <!-- date - category -->
+            <div class='text-sm font-roboto font-medium text-gray-700'>
+              <span>{{$formatDate($page.article.date)}}</span>
+              <span class=" inline-block px-2">—</span>
+              <g-link class="font-novaround text-primary-400 hover:text-primary-500">
+                {{$page.article.category.title}}
+              </g-link>
+            </div>
+            <!-- title -->
+            <div class="leading-tight font-novaflat text-3xl text-gray-900 lg:text-4xl">
+              {{ $page.article.title }}
+            </div>
+            <!-- excerpt -->
+            <div class="excerpt text-sm lg:text-base">{{$page.article.excerpt}}</div>
           </div>
-          <!-- title -->
-          <div class="leading-tight font-novaflat text-3xl text-gray-900 lg:text-4xl">
-            {{ $page.article.title }}
-          </div>
-          <!-- excerpt -->
-          <div class="excerpt text-sm lg:text-base">{{$page.article.excerpt}}</div>
-        </div>
+        </transition>
         <!-- image -->
         <div class="mx-auto lg:w-1/2">
           <g-image :src="$page.article.image" 
@@ -90,6 +92,7 @@ export default {
   mounted() {
     // when we revisit the page, we need to register it
     mediumZoom(".markdown img");
+    // alert(this.$router.go(-1));
   },
   updated() {
     // register everytime we refresh the page..

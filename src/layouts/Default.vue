@@ -131,7 +131,15 @@ export default {
   }
 };
 </script>
+<style>
+.fade-enter-active {
+  transition: opacity 0.5s;
+}
 
+.fade-enter {
+  opacity: 0;
+}
+</style>
 <static-query>
 query {
   metadata {
