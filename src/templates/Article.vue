@@ -4,7 +4,7 @@
     <div class="p-4 font-roboto max-w-screen-xl mx-auto">
       <!-- back -->
       <a class="group inline-block my-2 ml-1 transition-all duration-200 text-gray-500 font-medium tracking-wide hover:tracking-wider hover:cursor-pointer" @click="$router.go(-1)">
-        <span class="inline-block  transition-all duration-200 transform group-hover:-translate-x-1">◀</span> Back
+        <span class="inline-block  transition-all duration-200 transform ease-linear group-hover:-translate-x-1">◀</span> Back
       </a>
       
       <div class="lg:flex items-center lg:space-x-4">
@@ -15,7 +15,8 @@
             <div class='text-sm font-roboto font-medium text-gray-700'>
               <span>{{$formatDate($page.article.date)}}</span>
               <span class=" inline-block px-2">—</span>
-              <g-link class="font-novaround text-primary-400 hover:text-primary-500">
+              <g-link class="font-novaround text-primary-400 hover:text-primary-500"
+              :to="$page.article.category.path">
                 {{$page.article.category.title}}
               </g-link>
             </div>

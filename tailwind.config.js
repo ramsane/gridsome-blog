@@ -28,7 +28,56 @@ module.exports = {
         novaflat: ['Nova Flat'],
         novaround: ['Nova Round'],
         roboto: ['Roboto']
+      },
+      // for tailwind animation
+      animationDuration: {
+        '100ms': '100ms',
+        '200ms': '200ms',
+        '300ms': '300ms',
+        '400ms': '400ms',
+        '500ms': '500ms',
+        '600ms': '600ms',
+        '700ms': '700ms',
+        '800ms': '800ms',
+        '900ms': '900ms',
+      },
+      animationDelay: {
+        '100ms': '100ms',
+        '200ms': '200ms',
+        '300ms': '300ms',
+        '400ms': '400ms',
+        '500ms': '500ms',
+        '600ms': '600ms',
+        '700ms': '700ms',
+        '800ms': '800ms',
+        '900ms': '900ms',
+      },
+      animationIterationCount: {
+        'default': 'once'
       }
+    },
+    animations: {
+      'entranceFromBottom': {
+        from: {
+          opacity: '0',
+          transform: 'translateY(1rem)',
+        },
+        to: {
+          opacity: '1',
+          transform: 'translateY(0px)'
+        }
+      },
+      'jump': {
+        '0%': {
+          transform: 'translateY(0%)',
+        },
+        '50%': {
+          transform: 'translateY(-100%)',
+        },
+        '100%': {
+          transform: 'translateY(0%)',
+        },
+      },
     }
   },
   variants: {
@@ -40,5 +89,7 @@ module.exports = {
     translate: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
     cursor: ['responsive', 'hover', 'focus'],
   },
-  plugins: []
+  plugins: [
+    require('tailwindcss-animations'),
+  ],
 }

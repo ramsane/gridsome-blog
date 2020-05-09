@@ -11,22 +11,17 @@ import formatDate from '~/assets/js/formatdate'
 
 import Title from '~/components/Title.vue'
 
+// for load on scroll for the articles
 import InfiniteLoading from 'vue-infinite-loading'
 
-// for imaze zooming
-// import mediumZoom from 'medium-zoom'
-// mediumZoom(".content img", {
-//   margin: 4
-// });
+import NProgress from 'nprogress';
+import 'nprogress/nprogress.css';
 
 // import global css
 import '~/assets/styles.css'
 
-export default function (Vue, {
-  router,
-  head,
-  isClient
-}) {
+export default function (Vue, { router, head, isClient }) {
+
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   Vue.component('rs-title', Title)
@@ -36,6 +31,16 @@ export default function (Vue, {
 
   // add formatDate as prototype
   Vue.prototype.$formatDate = formatDate
+
+  // for progressbar
+  NProgress.configure({ showSpinner: false });
+  router.beforeEach((to, from, next) => {
+    NProgress.start()
+    next()
+  })
+  router.afterEach((to, from) => {
+    NProgress.done()
+  })
 
   head.link.push({
     rel: 'stylesheet',

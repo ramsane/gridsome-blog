@@ -4,7 +4,7 @@
     <div class="transition duration-300 lg:translate-x-0 min-h-screen relative"
       :class="{ '-translate-x-2/3 transform sm:-translate-x-1/3': menuClicked }" >
       <!-- header -->
-      <div class="text-gray-600" :class="[bgColor]"> 
+      <div :class="[bgColor, textColor]"> 
         <header class="flex justify-between items-center px-4 py-2 lg:max-w-screen-xl lg:mx-auto">
           <!-- link to home page with logo -->
           <g-link to="/">
@@ -67,8 +67,8 @@
     </div>
     <!-- side nav -->
     <nav
-      class="fixed top-0 right-0 h-full w-2/3 transition duration-300 transform  sm:w-1/3 lg:translate-x-full text-gray-600 text-xl"
-      :class="[{'translate-x-full': !menuClicked}, bgColor]"
+      class="fixed top-0 right-0 h-full w-2/3 transition duration-300 transform  sm:w-1/3 lg:translate-x-full text-xl"
+      :class="[{'translate-x-full': !menuClicked}, bgColor, textColor]"
     >
       <div
         v-for="category in categories"
@@ -103,6 +103,9 @@ export default {
   computed: {
     bgColor() {
       return this.home ? "bg-gray-900" : "bg-white";
+    },
+    textColor() {
+      return this.home ? "text-gray-300" : "text-gray-900";
     }
   },
   data() {

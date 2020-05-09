@@ -13,12 +13,14 @@
     "gridsome-plugin-remark-youtube": "^1.0.1",
     "gridsome-remark-katex": "^0.1.1",
     "medium-zoom": "^1.0.5",
+    "nprogress": "^0.2.0",
+    "tailwindcss-animations": "^2.0.0",
     "theaterjs": "^3.2.0",
     "typeface-nova-flat": "0.0.71",
     "typeface-nova-round": "0.0.71",
     "typeface-nova-square": "0.0.71",
     "typeface-roboto": "0.0.75",
-    "vue-infinite-loading": "^2.4.5"
+    "vue-infinite-loading": "^2.4.5",
   },
   "devDependencies": {
     "gridsome-plugin-tailwindcss": "^2.2.46",

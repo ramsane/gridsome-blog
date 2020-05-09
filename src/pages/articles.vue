@@ -4,12 +4,12 @@
     <rs-title>Articles</rs-title>
 
     <!-- Articles -->
-    <article-list :articles="loadedPosts" />
+    <article-list :articles="loadedPosts" :per-page="$page.articles.pageInfo.perPage"/>
     <ClientOnly>
 				<infinite-loading @infinite="infiniteHandler" 
-        spinner="wavedots" distance=0>
+        spinner="wavedots" :distance="0">
 					<div slot="no-more"
-           class="text-sm text-gray-600 select-none mt-4">
+           class="text-sm text-gray-600 select-none my-10">
 						that's all for now. : )
 					</div>
 					<div slot="no-results">
@@ -51,6 +51,10 @@ export default {
   },
   methods: {
     async infiniteHandler($state) {
+      if (this.$page.articles.pageInfo.totalPages == 1) {
+        // make the state loaded so that appopriate message will get displayed
+        $state.loaded();
+      }
       if (this.currentPage + 1 > this.$page.articles.pageInfo.totalPages) {
         $state.complete();
       } else {
@@ -69,9 +73,9 @@ export default {
 </script>
 <page-query>
 query Articles($page: Int){
-  articles: allArticle(perPage:3, page: $page) @paginate {
+  articles: allArticle(perPage:6, page: $page) @paginate {
     pageInfo{
-    	currentPage totalPages totalItems
+    	currentPage totalPages totalItems perPage
     }
     edges {
       node {
