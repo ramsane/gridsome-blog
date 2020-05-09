@@ -29,7 +29,6 @@
 
 <script>
 import ArticleList from "~/components/ArticleList.vue";
-import { Pager } from "gridsome";
 
 export default {
   components: {
@@ -79,10 +78,10 @@ query Articles($page: Int){
     }
     edges {
       node {
-      id, category{title path} image(width: 800)
-      title date author{title path} excerpt tags {id title path} 
-      path
-    }
+        id, category{title path} image(width: 800)
+        title date author{title path} excerpt tags {id title path} 
+        path
+      }
     }
   }
 }

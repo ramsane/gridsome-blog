@@ -10,6 +10,7 @@ require('typeface-roboto')
 import formatDate from '~/assets/js/formatdate'
 
 import Title from '~/components/Title.vue'
+import BackButton from '~/components/BackButton.vue'
 
 // for load on scroll for the articles
 import InfiniteLoading from 'vue-infinite-loading'
@@ -25,6 +26,7 @@ export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   Vue.component('rs-title', Title)
+  Vue.component('rs-back-button', BackButton)
 
   // for infinite scrolling effect
   Vue.use(InfiniteLoading)

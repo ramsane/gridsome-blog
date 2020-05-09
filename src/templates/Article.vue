@@ -1,11 +1,9 @@
 <<template>
   <Layout>
     <!-- header with title, image and excerpt -->
+    <!-- back -->
+    <rs-back-button></rs-back-button>
     <div class="p-4 font-roboto max-w-screen-xl mx-auto">
-      <!-- back -->
-      <a class="group inline-block my-2 ml-1 transition-all duration-200 text-gray-500 font-medium tracking-wide hover:tracking-wider hover:cursor-pointer" @click="$router.go(-1)">
-        <span class="inline-block  transition-all duration-200 transform ease-linear group-hover:-translate-x-1">◀</span> Back
-      </a>
       
       <div class="lg:flex items-center lg:space-x-4">
         <!-- text  -->
@@ -34,10 +32,9 @@
           class="rounded-md w-full h-full object-cover" />        
         </div>
       </div>
-
     </div>
+
     <!-- content -->
-    
     <div class="p-4 mt-8 max-w-screen-xl mx-auto">
       <VueRemarkContent  class="markdown"/>
       <!-- tags -->
