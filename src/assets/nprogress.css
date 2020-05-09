@@ -1,0 +1,27 @@
+/* Make clicks pass-through */
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  @apply bg-primary-500 fixed top-0 left-0 w-full h-1;
+  z-index: 1031;
+}
+
+/* Fancy blur effect */
+#nprogress .peg {
+  @apply block absolute right-0 w-full h-full shadow-sm;
+  opacity: 1.0;
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+      -ms-transform: rotate(3deg) translate(0px, -4px);
+          transform: rotate(3deg) translate(0px, -4px);
+}
+.nprogress-custom-parent {
+  overflow: hidden;
+  position: relative;
+}
+
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+  position: absolute;
+}

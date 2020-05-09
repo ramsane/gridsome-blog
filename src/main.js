@@ -15,7 +15,7 @@ import Title from '~/components/Title.vue'
 import InfiniteLoading from 'vue-infinite-loading'
 
 import NProgress from 'nprogress';
-import 'nprogress/nprogress.css';
+import '~/assets/nprogress.css';
 
 // import global css
 import '~/assets/styles.css'
@@ -35,11 +35,19 @@ export default function (Vue, { router, head, isClient }) {
   // for progressbar
   NProgress.configure({ showSpinner: false });
   router.beforeEach((to, from, next) => {
-    NProgress.start()
+    // if (!process.isClient) {
+    // browser only code
+    if (from.name !== null) {
+      NProgress.start()
+    }
+    // }
     next()
   })
   router.afterEach((to, from) => {
+    // if (process.isClient) {
+    // browser only code
     NProgress.done()
+    // }
   })
 
   head.link.push({
