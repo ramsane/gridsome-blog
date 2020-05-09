@@ -20,7 +20,7 @@
     "typeface-nova-round": "0.0.71",
     "typeface-nova-square": "0.0.71",
     "typeface-roboto": "0.0.75",
-    "vue-infinite-loading": "^2.4.5",
+    "vue-infinite-loading": "^2.4.5"
   },
   "devDependencies": {
     "gridsome-plugin-tailwindcss": "^2.2.46",

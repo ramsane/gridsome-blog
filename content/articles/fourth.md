@@ -1,6 +1,6 @@
 ---
 title: 04. First Article - Part 2 
-slug: first-article
+slug: fourth-article
 author: ramsane
 image: ./images/cv.jpg
 tags: ['t1', 't2']

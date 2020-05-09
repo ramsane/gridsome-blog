@@ -1,7 +1,7 @@
 ---
 title: 05. Second Article - Part 2
 image: ./images/stats.jpg
-slug: second-article
+slug: fifth-article
 author: ramsane
 tags: ['t1', 't2']
 category: nlp

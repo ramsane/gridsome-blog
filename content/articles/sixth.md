@@ -1,6 +1,6 @@
 ---
 title: 06. Design and code responsive skeleton screens - Part 2
-slug: third-article
+slug: sixth-article
 image: ./images/tf.jpg
 author: ramsane
 tags: ['t1', 't2']
