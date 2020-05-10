@@ -17,7 +17,7 @@
     content: '';
     max-width: 10rem;
     @apply bg-primary-500 w-0 block my-2 mx-auto;
-    @apply animation-width animation-delay-300ms animation-500ms;
+    @apply animation-expand animation-delay-300ms animation-500ms;
 }
 
 /* for tags */

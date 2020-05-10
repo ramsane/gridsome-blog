@@ -1,8 +1,10 @@
 <template>
-  <Layout>
-  <!-- heading -->
-    <rs-title>Articles</rs-title>
-
+  <Layout class="bg-gray-100">
+    
+    <div class="bg-white">
+      <!-- heading -->
+      <rs-title>Articles</rs-title>
+    </div>
     <!-- Articles -->
     <article-list :articles="loadedPosts" :per-page="$page.articles.pageInfo.perPage"/>
     <ClientOnly>
@@ -72,7 +74,7 @@ export default {
 </script>
 <page-query>
 query Articles($page: Int){
-  articles: allArticle(perPage:6, page: $page) @paginate {
+  articles: allArticle(perPage:2, page: $page) @paginate {
     pageInfo{
     	currentPage totalPages totalItems perPage
     }

@@ -64,11 +64,11 @@ module.exports = {
         to: { opacity: '1' }
       },
       'fadeIn-from-Bottom': {
-        from: { opacity: '0', transform: 'translateY(0.8rem)', },
+        from: { opacity: '0', transform: 'translateY(1rem)', },
         to: { opacity: '1', transform: 'translateY(0px)' }
       },
       'fadeIn-from-Top': {
-        from: { opacity: '0', transform: 'translateY(-0.8rem)', },
+        from: { opacity: '0', transform: 'translateY(-1rem)', },
         to: { opacity: '1', transform: 'translateY(0px)' }
       },
       'fadeIn-from-Right': {
@@ -79,7 +79,7 @@ module.exports = {
         from: { opacity: '0', transform: 'translateX(-1rem)' },
         to: { opacity: '1', transform: 'translateX(0rem)' }
       },
-      'width': {
+      'expand': {
         from: { width: '0' }, to: { width: '50%' }
       }
     }

@@ -1,8 +1,8 @@
 <template>
-        <div class="max-w-screen-xl mx-auto justify-around grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 duration-200">
+        <div class="max-w-screen-xl mx-auto justify-around grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 duration-200 mt-2">
           <app-article-card  v-for="(article, index) in articles" :key="article.id"
             :article="article.node"
-             class="p-4 m-2 max-w-sm mx-auto opacity-0 animation-fadeIn-from-Bottom"
+             class="bg-white p-4 m-2 max-w-sm mx-auto opacity-0 animation-fadeIn-from-Bottom"
              :style="{'animation-delay': animationDelay(index)}"/>
       </div>
 </template>

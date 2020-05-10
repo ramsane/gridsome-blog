@@ -1,9 +1,11 @@
 <template>
-  <Layout>
-    <!-- back -->
-    <rs-back-button></rs-back-button>
-    <!-- heading -->
-    <rs-title>{{ $page.category.title }}</rs-title>
+  <Layout class="bg-gray-100">
+    <div class="bg-white">
+      <!-- back -->
+      <rs-back-button></rs-back-button>
+      <!-- heading -->
+      <rs-title>{{ $page.category.title }}</rs-title>
+    </div>
     <!-- Articles -->
     <article-list :articles="loadedPosts" :per-page="pageInfo.perPage"/>
     <ClientOnly>

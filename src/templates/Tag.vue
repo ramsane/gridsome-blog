@@ -1,10 +1,12 @@
 <template>
-  <Layout>
-    <!-- back -->
-    <rs-back-button></rs-back-button>
-    <!-- heading -->
-    <rs-title>{{ $page.tag.title }}</rs-title>
-    <!-- Articles -->
+  <Layout class="bg-gray-100">
+    <div class="bg-white">
+      <!-- back -->
+      <rs-back-button></rs-back-button>
+      <!-- heading -->
+      <rs-title>{{ $page.tag.title }}</rs-title>
+      <!-- Articles -->
+    </div>
     <article-list :articles="loadedPosts" :per-page="pageInfo.perPage"/>
     <ClientOnly>
       <infinite-loading @infinite="infiniteHandler" 

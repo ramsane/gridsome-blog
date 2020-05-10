@@ -15,6 +15,7 @@ module.exports = {
     options: {
       tailwindConfig: './tailwind.config.js',
       purgeConfig: {
+        whitelist: ['animation-expand'],
         whitelistPatterns: [/.*katex.*/],
         whitelistPatternsChildren: [/nprogress/]
       },

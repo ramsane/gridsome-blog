@@ -1,5 +1,5 @@
 <template>
-  <Layout :home="true">
+  <Layout :home="true" class="bg-gray-100">
     <!-- Intro section -->
   <div class="bg-gray-900 text-white lg:pb-32">
     <div class="space-y-2 md:flex flex-row-reverse mx-auto lg:max-w-screen-lg items-center" >
@@ -9,7 +9,7 @@
   </div>
 
     <!-- latest articles -->
-    <div class="bg-white max-w-screen-xl mx-auto lg:-mt-24 rounded-t-md shadow">
+    <div class="bg-white max-w-screen-xl mx-auto lg:-mt-24 rounded-t-md">
       <!-- title with below border -->
       <rs-title class="animation-delay-200ms">Latest Articles</rs-title>
       <!-- Article Card -->
