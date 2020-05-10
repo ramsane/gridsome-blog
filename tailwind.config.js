@@ -31,6 +31,7 @@ module.exports = {
       },
       // for tailwind animation
       animationDuration: {
+        'default': '500ms',
         '100ms': '100ms',
         '200ms': '200ms',
         '300ms': '300ms',
@@ -54,30 +55,33 @@ module.exports = {
       },
       animationIterationCount: {
         'default': 'once'
-      }
+      },
+      animationFillMode: { 'default': 'forwards' },
     },
     animations: {
-      'entranceFromBottom': {
-        from: {
-          opacity: '0',
-          transform: 'translateY(1rem)',
-        },
-        to: {
-          opacity: '1',
-          transform: 'translateY(0px)'
-        }
+      'fadeIn': {
+        from: { opacity: '0' },
+        to: { opacity: '1' }
       },
-      'jump': {
-        '0%': {
-          transform: 'translateY(0%)',
-        },
-        '50%': {
-          transform: 'translateY(-100%)',
-        },
-        '100%': {
-          transform: 'translateY(0%)',
-        },
+      'fadeIn-from-Bottom': {
+        from: { opacity: '0', transform: 'translateY(0.8rem)', },
+        to: { opacity: '1', transform: 'translateY(0px)' }
       },
+      'fadeIn-from-Top': {
+        from: { opacity: '0', transform: 'translateY(-0.8rem)', },
+        to: { opacity: '1', transform: 'translateY(0px)' }
+      },
+      'fadeIn-from-Right': {
+        from: { opacity: '0', transform: 'translateX(1rem)' },
+        to: { opacity: '1', transform: 'translateX(0rem)' }
+      },
+      'fadeIn-from-Left': {
+        from: { opacity: '0', transform: 'translateX(-1rem)' },
+        to: { opacity: '1', transform: 'translateX(0rem)' }
+      },
+      'width': {
+        from: { width: '0' }, to: { width: '50%' }
+      }
     }
   },
   variants: {
@@ -88,6 +92,8 @@ module.exports = {
     // margin: ['responsive', 'hover', 'focus', 'group-hover'],
     translate: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
     cursor: ['responsive', 'hover', 'focus'],
+    width: ['responsive', 'hover', 'focus'],
+    transitionProperty: ['responsive', 'hover', 'focus'],
   },
   plugins: [
     require('tailwindcss-animations'),

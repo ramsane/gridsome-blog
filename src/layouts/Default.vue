@@ -115,14 +115,6 @@ export default {
         {
           name: "Articles",
           path: "/articles"
-        },
-        {
-          name: "machine learning",
-          path: "/ar"
-        },
-        {
-          name: "Mathematics",
-          path: "/mat"
         }
       ]
     };

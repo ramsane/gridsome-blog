@@ -3,7 +3,7 @@
     <!-- Intro section -->
   <div class="bg-gray-900 text-white lg:pb-32">
     <div class="space-y-2 md:flex flex-row-reverse mx-auto lg:max-w-screen-lg items-center" >
-      <app-avatar class="w-full max-w-md mx-auto lg:max-w-lg" />
+      <app-avatar class="w-full max-w-md mx-auto lg:max-w-lg animation-fadeIn-from-Right" />
       <app-typed-intro class="text-center w-full max-w-md mx-auto h-16" />
     </div>
   </div>
@@ -11,12 +11,9 @@
     <!-- latest articles -->
     <div class="bg-white max-w-screen-xl mx-auto lg:-mt-24 rounded-t-md shadow">
       <!-- title with below border -->
-      <rs-title>Latest Articles</rs-title>
+      <rs-title class="animation-delay-200ms">Latest Articles</rs-title>
       <!-- Article Card -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <app-article-card  v-for="edge in $page.articles.edges" :key="edge.node.id"
-         :article="edge.node" class="p-4 m-2 max-w-sm mx-auto" />
-      </div>
+      <article-list :articles="$page.articles.edges" :initial-delay="200"/>
       <!-- all articles link -->
       <div class="text-center my-4 text-xl font-novaround">
         <g-link to="/articles"
@@ -33,14 +30,6 @@
   </Layout>
 </template>
 
-<script>
-export default {
-  metaInfo: {
-    title: "Hello, world!"
-  }
-};
-</script>
-
 <style>
 .home-links a {
   margin-right: 1rem;
@@ -50,13 +39,21 @@ export default {
 <script>
 // typed intro
 import TypedIntro from "~/components/TypedIntro.vue";
-import Avatar from "~/components/Avatar.vue";
+// import Avatar from "~/components/Avatar.vue";
+import Avatar from "~/assets/svgs/newavatar.svg";
+
 import ArticleCard from "~/components/ArticleCard.vue";
+import ArticleList from "~/components/ArticleList.vue";
+
 export default {
   components: {
     "app-typed-intro": TypedIntro,
     "app-avatar": Avatar,
-    "app-article-card": ArticleCard
+    "app-article-card": ArticleCard,
+    "article-list": ArticleList
+  },
+  metaInfo: {
+    title: "Hello, world!"
   }
 };
 </script>
@@ -66,9 +63,9 @@ export default {
 query LatestArticles {
   articles: allArticle(limit: 6){
     edges{ node {
-      id, category{title path} image(width: 800)
-      title date author{title path} excerpt tags {id title path} 
-      path
+     id, category{title path} image(width: 800)
+        title date author{title path} excerpt tags {id title path} 
+        path
     }}
   }
 }

@@ -15,16 +15,16 @@ export default {
     theater
       .on("type:start, erase:start", function() {
         // add a class to actor's dom element when he starts typing/erasing
-        theater.getCurrentActor().$element.classList.add("is-typing");
+        // theater.getCurrentActor().$element.classList.add("is-typing");
       })
       .on("type:end, erase:end", function() {
         // and then remove it when he's done
-        theater.getCurrentActor().$element.classList.remove("is-typing");
+        // theater.getCurrentActor().$element.classList.remove("is-typing");
       });
 
     theater
       .addActor("aboutme", { accuracy: 1, speed: 0.75 })
-      .addScene(500, "aboutme:Hi!", 500, " I`m", 750, -2, "'m ")
+      .addScene(1000, "aboutme:", 1000, "Hi!", 500, " I`m", 750, -2, "'m ")
       .addScene('<span class="text-primary-500">Ramana Reddy,</span>')
       .addScene(500, "<br>an adept at ")
       .addScene('<span class="text-sklearn">Machine Learning.</span>')
@@ -50,6 +50,7 @@ export default {
 }
 .is-typing::after {
   content: "|";
-  animation: blink 500ms infinite;
+  opacity: 0;
+  animation: blink 500ms infinite 1s;
 }
 </style>

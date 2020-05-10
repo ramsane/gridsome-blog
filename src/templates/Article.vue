@@ -3,39 +3,38 @@
     <!-- header with title, image and excerpt -->
     <!-- back -->
     <rs-back-button></rs-back-button>
+    <!-- title, excerpt and image -->
     <div class="p-4 font-roboto max-w-screen-xl mx-auto">
-      
       <div class="lg:flex items-center lg:space-x-4">
         <!-- text  -->
-        <transition name="fade" appear>  
-          <div class="max-w-screen-md mx-auto lg:max-w-md lg:mr-4">
-            <!-- date - category -->
-            <div class='text-sm font-roboto font-medium text-gray-700'>
-              <span>{{$formatDate($page.article.date)}}</span>
-              <span class=" inline-block px-2">—</span>
-              <g-link class="font-novaround text-primary-400 hover:text-primary-500"
-              :to="$page.article.category.path">
-                {{$page.article.category.title}}
-              </g-link>
-            </div>
-            <!-- title -->
-            <div class="leading-tight font-novaflat text-3xl text-gray-900 lg:text-4xl">
-              {{ $page.article.title }}
-            </div>
-            <!-- excerpt -->
-            <div class="excerpt text-sm lg:text-base">{{$page.article.excerpt}}</div>
+        <div class="max-w-screen-md mx-auto lg:max-w-md lg:mr-4 animation-fadeIn-from-Bottom lg:animation-fadeIn-from-Left">
+          <!-- date - category -->
+          <div class='text-sm font-roboto font-medium text-gray-700'>
+            <span>{{$formatDate($page.article.date)}}</span>
+            <span class=" inline-block px-2">—</span>
+            <g-link class="font-novaround text-primary-400 hover:text-primary-500"
+            :to="$page.article.category.path">
+              {{$page.article.category.title}}
+            </g-link>
           </div>
-        </transition>
+          <!-- title -->
+          <div class="leading-tight font-novaflat text-3xl text-gray-900 lg:text-4xl opacity-0 animation-fadeIn">
+            {{ $page.article.title }}
+          </div>
+          <!-- excerpt -->
+          <div class="excerpt text-sm lg:text-base">{{$page.article.excerpt}}</div>
+        </div>
+
         <!-- image -->
         <div class="mx-auto lg:w-1/2">
           <g-image :src="$page.article.image" 
-          class="rounded-md w-full h-full object-cover" />        
+          class="rounded-md w-full h-full object-cover animation-fadeIn-from-Bottom lg:animation-fadeIn-from-Right" />        
         </div>
       </div>
     </div>
 
     <!-- content -->
-    <div class="p-4 mt-8 max-w-screen-xl mx-auto">
+    <div class="p-4 mt-8 max-w-screen-xl mx-auto animation-fadeIn-from-Bottom lg:animation-fadeIn-from-Top">
       <VueRemarkContent  class="markdown"/>
       <!-- tags -->
       <!-- TODO: use slots for this tags and use it in the markdown file -->

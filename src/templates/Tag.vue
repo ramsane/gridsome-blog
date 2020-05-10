@@ -8,7 +8,7 @@
     <article-list :articles="loadedPosts" :per-page="pageInfo.perPage"/>
     <ClientOnly>
       <infinite-loading @infinite="infiniteHandler" 
-      spinner="wavedots" :distance="0">
+      spinner="wavedots" :distance="100">
         <div slot="no-more"
           class="text-sm text-gray-600 select-none my-10">
           that's all for now. : )
@@ -94,7 +94,6 @@ query($id: ID!, $page: Int){
       edges{
         node{
           ... on Article{
-            id, category{title path} image(width: 800)
             id, category{title path} image(width: 800)
         title date author{title path} excerpt tags {id title path} 
         path
