@@ -1,15 +1,29 @@
 .markdown {
   /* global styles */
-  @apply font-roboto leading-relaxed text-gray-800 text-lg;
+  @apply font-roboto leading-relaxed text-default text-lg;
 
   & > * {
     @apply max-w-screen-md mx-auto;
   }
-
-  /* math  */
-  & > span.katex-display, & > img.g-image {
+  /* images */
+  & > img.g-image {
     @apply max-w-screen-lg mx-auto;
   }
+
+  /* math  */
+  & > span.katex-display{
+    @apply max-w-screen-md mx-auto;
+  }
+  /* inline math */
+  & span.katex{
+    background-color: var(--card-background-color);
+    @apply px-2 py-1 rounded-md;
+  }
+  & > span.katex-display>span.katex{
+    background-color: var(--card-background-color);
+    @apply p-4 rounded-md;
+  }
+
   /* to make sure the image is within the container */
   @media (width <= 768px) {
     & > img.g-image {

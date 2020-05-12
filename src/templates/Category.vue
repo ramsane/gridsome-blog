@@ -1,6 +1,6 @@
 <template>
-  <Layout class="bg-gray-100">
-    <div class="bg-white">
+  <Layout class="bg-page">
+    <div class="bg-header transition duration-300">
       <!-- back -->
       <rs-back-button></rs-back-button>
       <!-- heading -->

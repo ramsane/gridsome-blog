@@ -1,6 +1,7 @@
 <<template>
-  <Layout>
+  <Layout class="text-default bg-content">
     <!-- header with title, image and excerpt -->
+    
     <!-- back -->
     <rs-back-button></rs-back-button>
     <!-- title, excerpt and image -->
@@ -9,7 +10,7 @@
         <!-- text  -->
         <div class="max-w-screen-md mx-auto lg:max-w-md lg:mr-4 animation-fadeIn-from-Bottom lg:animation-fadeIn-from-Left">
           <!-- date - category -->
-          <div class='text-sm font-roboto font-medium text-gray-700'>
+          <div class='text-sm font-roboto font-medium text-secondary'>
             <span>{{$formatDate($page.article.date)}}</span>
             <span class=" inline-block px-2">—</span>
             <g-link class="font-novaround text-primary-400 hover:text-primary-500"
@@ -18,7 +19,7 @@
             </g-link>
           </div>
           <!-- title -->
-          <div class="leading-tight font-novaflat text-3xl text-gray-900 lg:text-4xl opacity-0 animation-fadeIn">
+          <div class="leading-tight font-novaflat text-3xl lg:text-4xl opacity-0 animation-fadeIn">
             {{ $page.article.title }}
           </div>
           <!-- excerpt -->
@@ -33,12 +34,13 @@
       </div>
     </div>
 
+
     <!-- content -->
     <div class="p-4 mt-8 max-w-screen-xl mx-auto animation-fadeIn-from-Bottom lg:animation-fadeIn-from-Top">
       <VueRemarkContent  class="markdown"/>
       <!-- tags -->
       <!-- TODO: use slots for this tags and use it in the markdown file -->
-      <div class="mt-4 text-gray-700 mt-8 max-w-screen-md mx-auto">
+      <div class="mt-4 mt-8 max-w-screen-md mx-auto">
         <span v-for="tag in $page.article.tags" :key="tag.id" class="tag">
           <g-link :to="tag.path" class="inline-block px-2 text-primary-400 hover:text-primary-600">{{tag.title}}</g-link>
           <!-- <span class="saperator text-gray-500">&#x25CF;</span> -->

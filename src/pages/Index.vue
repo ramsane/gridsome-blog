@@ -1,15 +1,15 @@
 <template>
-  <Layout :home="true" class="bg-gray-100">
+  <Layout :home="true" class="bg-page">
     <!-- Intro section -->
-  <div class="bg-gray-900 text-white lg:pb-32">
+  <div class="bg-dark lg:pb-32">
     <div class="space-y-2 md:flex flex-row-reverse mx-auto lg:max-w-screen-lg items-center" >
       <app-avatar class="w-full max-w-md mx-auto lg:max-w-lg animation-fadeIn-from-Right" />
-      <app-typed-intro class="text-center w-full max-w-md mx-auto h-16" />
+      <app-typed-intro class="text-gray-300 text-center w-full max-w-md mx-auto h-16" />
     </div>
   </div>
 
     <!-- latest articles -->
-    <div class="bg-white max-w-screen-xl mx-auto lg:-mt-24 rounded-t-md">
+    <div class="bg-content max-w-screen-xl mx-auto lg:-mt-24 rounded-t-md">
       <!-- title with below border -->
       <rs-title class="animation-delay-200ms">Latest Articles</rs-title>
       <!-- Article Card -->
