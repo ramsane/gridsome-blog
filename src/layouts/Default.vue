@@ -1,6 +1,6 @@
 <template>
   <!-- body and header -->
-  <div :class="theme" class="transition duration-300">
+  <div :class="theme">
     <div class="text-default transition duration-300 lg:translate-x-0 min-h-screen relative"
       :class="{ '-translate-x-2/3 transform sm:-translate-x-1/3': menuClicked }" >
       <!-- header -->
@@ -139,15 +139,6 @@ export default {
   }
 };
 </script>
-<style>
-.fade-enter-active {
-  transition: opacity 0.5s;
-}
-
-.fade-enter {
-  opacity: 0;
-}
-</style>
 <static-query>
 query {
   metadata {

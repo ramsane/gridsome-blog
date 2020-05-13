@@ -73,7 +73,7 @@ export default {
 </script>
 <page-query>
 query Articles($page: Int){
-  articles: allArticle(perPage:2, page: $page) @paginate {
+  articles: allArticle(perPage:6, page: $page) @paginate {
     pageInfo{
     	currentPage totalPages totalItems perPage
     }

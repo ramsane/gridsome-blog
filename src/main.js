@@ -21,7 +21,11 @@ import '~/assets/nprogress.css';
 // import global css
 import '~/assets/styles.css'
 
-export default function (Vue, { router, head, isClient }) {
+export default function (Vue, {
+  router,
+  head,
+  isClient
+}) {
 
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
@@ -35,7 +39,9 @@ export default function (Vue, { router, head, isClient }) {
   Vue.prototype.$formatDate = formatDate
 
   // for progressbar
-  NProgress.configure({ showSpinner: false });
+  NProgress.configure({
+    showSpinner: false
+  });
   router.beforeEach((to, from, next) => {
     // if (!process.isClient) {
     // browser only code

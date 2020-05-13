@@ -1,9 +1,10 @@
-<<template>
+<template>
   <Layout class="text-default bg-content">
     <!-- header with title, image and excerpt -->
-    
+    <ClientOnly>
+      <read-progress class="w-full bg-transparent sticky z-50 top-0 left-0 h-1" />
+    </ClientOnly>
     <!-- back -->
-    <rs-back-button></rs-back-button>
     <!-- title, excerpt and image -->
     <div class="p-4 font-roboto max-w-screen-xl mx-auto">
       <div class="lg:flex items-center lg:space-x-4">
@@ -34,10 +35,10 @@
       </div>
     </div>
 
-
     <!-- content -->
     <div class="p-4 mt-8 max-w-screen-xl mx-auto animation-fadeIn-from-Bottom lg:animation-fadeIn-from-Top">
       <VueRemarkContent  class="markdown"/>
+
       <!-- tags -->
       <!-- TODO: use slots for this tags and use it in the markdown file -->
       <div class="mt-4 mt-8 max-w-screen-md mx-auto">
@@ -47,42 +48,34 @@
         </span>
       </div>
     </div>
-    <!-- Tags:
-    < class="pl-4">
-    <br/>
-    Author:
-        <g-link :to="$page.article.author.path" class="text-orange-500 hover:text-orange-800">
-          {{$page.article.author.title}}
-          </g-link>  -->
-    <!-- <pre>
-      {{$page.article}}
-    </pre> -->
     <span class="block mt-16"></span>
   </Layout>
 </template>
 
-<style src='~/assets/markdown.css'>
-</style>
+<style>
+/* for markdown content */
+@import url("../assets/markdown.css");
 
-<page-query>
-query Article($id: ID!){
-  article(id: $id){
-    date category{ title, path} title excerpt image
-    author {title path}
-    content
-    tags { id title path}
-    headings {
-      depth
-      value
-      # anchor
-    }
-  }
+/* for read rogress bar */
+#progress-container-el {
+  /* background */
+  background-color: transparent !important;
+  top: calc(100% - 4px) !important;
 }
-</page-query>
+#progress-el {
+  /* progress bar */
+  background-color: red !important;
+}
+</style>
 
 <script>
 import mediumZoom from "medium-zoom";
+import VueReadProgress from "~/components/VueReadProgress.vue";
+
 export default {
+  components: {
+    "read-progress": VueReadProgress
+  },
   metaInfo() {
     return {
       title: this.$page.article.title
@@ -99,3 +92,19 @@ export default {
   }
 };
 </script>
+
+<page-query>
+query Article($id: ID!){
+  article(id: $id){
+    date category{ title, path} title excerpt image
+    author {title path}
+    content
+    tags { id title path}
+    headings {
+      depth
+      value
+      # anchor
+    }
+  }
+}
+</page-query>
