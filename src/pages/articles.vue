@@ -80,7 +80,7 @@ query Articles($page: Int){
     edges {
       node {
         id, category{title path} image(width: 800)
-        title date author{title path} excerpt tags {id title path} 
+        title date (format: "D MMM Y") author{title path} excerpt tags {id title path} 
         path
       }
     }

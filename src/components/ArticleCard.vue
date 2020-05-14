@@ -16,7 +16,7 @@
       {{article.title}}
     </g-link>
     <div class="text-xs font-roboto text-secondary">
-        on <span class="font-semibold">{{$formatDate(article.date)}} </span>
+        on <span class="font-semibold">{{article.date}} </span>
         by <span class="font-semibold">{{article.author.title}}</span>
     </div>
     <!-- excerpt -->

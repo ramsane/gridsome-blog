@@ -7,8 +7,6 @@ require('typeface-nova-round')
 require('typeface-nova-flat')
 require('typeface-roboto')
 
-import formatDate from '~/assets/js/formatdate'
-
 import Title from '~/components/Title.vue'
 import BackButton from '~/components/BackButton.vue'
 
@@ -34,9 +32,6 @@ export default function (Vue, {
 
   // for infinite scrolling effect
   Vue.use(InfiniteLoading)
-
-  // add formatDate as prototype
-  Vue.prototype.$formatDate = formatDate
 
   // for progressbar
   NProgress.configure({
