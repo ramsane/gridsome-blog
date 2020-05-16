@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://ramsane.github.io/</id>
+    <title>ramsane</title>
+    <updated>2020-05-16T00:52:34.686Z</updated>
+    <generator>Gridsome Feed Plugin</generator>
+    <link rel="alternate" href="https://ramsane.github.io"/>
+    <link rel="self" href="https://ramsane.github.io/feed.atom"/>
+    <subtitle>RamSane Blog</subtitle>
+    <entry>
+        <title type="html"><![CDATA[06. Design and code responsive skeleton screens - Part 22]]></title>
+        <id>https://ramsane.github.io/articles/sixth-article/</id>
+        <link href="https://ramsane.github.io/articles/sixth-article/"/>
+        <updated>2019-02-22T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[05. Second Article - Part 2]]></title>
+        <id>https://ramsane.github.io/articles/fifth-article/</id>
+        <link href="https://ramsane.github.io/articles/fifth-article/"/>
+        <updated>2018-01-22T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[04. First Article - Part 2]]></title>
+        <id>https://ramsane.github.io/articles/fourth-article/</id>
+        <link href="https://ramsane.github.io/articles/fourth-article/"/>
+        <updated>2017-12-22T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[03. Design and code responsive skeleton screens]]></title>
+        <id>https://ramsane.github.io/articles/third-article/</id>
+        <link href="https://ramsane.github.io/articles/third-article/"/>
+        <updated>2017-11-22T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[02. Second Article]]></title>
+        <id>https://ramsane.github.io/articles/second-article/</id>
+        <link href="https://ramsane.github.io/articles/second-article/"/>
+        <updated>2017-10-22T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[01. First Article]]></title>
+        <id>https://ramsane.github.io/articles/first-article/</id>
+        <link href="https://ramsane.github.io/articles/first-article/"/>
+        <updated>2017-09-22T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.]]></content>
+    </entry>
+</feed>
