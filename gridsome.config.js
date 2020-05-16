@@ -66,6 +66,54 @@ module.exports = {
           }]
         ]
       }
+    },
+
+    // to generate rss, json and atom feed
+    {
+      use: 'gridsome-plugin-feed',
+      options: {
+        contentTypes: ['Article'],
+        feedOptions: {
+          title: 'ramsane',
+          description: 'RamSane Blog',
+          link: "https://ramsane.github.io"
+        },
+        rss: {
+          enabled: true,
+          output: '/feed.xml'
+        },
+        atom: {
+          enabled: true,
+          output: '/feed.atom'
+        },
+        json: {
+          enabled: true,
+          output: '/feed.json'
+        },
+
+        maxItems: 25,
+        filterNodes: node => true, // we can filter nodes like published or not here.
+        nodeToFeedItem: node => ({
+          title: node.title,
+          date: node.date,
+          content: node.excerpt
+        })
+      }
+    },
+
+    // for generating site-maps
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        cacheTime: 600000, // default
+        exclude: ['/exclude-me'],
+        config: {
+          '/articles/*': {
+            changefreq: 'weekly',
+            priority: 0.5
+          }
+        }
+      }
     }
   ],
 

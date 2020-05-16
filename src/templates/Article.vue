@@ -90,11 +90,23 @@ export default {
           name: "description",
           content: this.$page.article.excerpt
         },
+        {
+          property: "og:image",
+          content: this.$page.article.image || ""
+        },
+        {
+          name: "twitter:card",
+          content: this.$page.article.image ? "summary_large_image" : "summary"
+        },
         { key: "og:url", property: "og:url", content: this.postUrl },
         {
           key: "article:published_time",
           property: "article:published_time",
           content: this.$page.article.date
+        },
+        {
+          name: "twitter:creator",
+          content: "@ramansane"
         }
       ]
     };
