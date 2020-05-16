@@ -92,7 +92,7 @@ export default {
         },
         {
           property: "og:image",
-          content: this.$page.article.image || ""
+          content: this.$page.article.image.src || ""
         },
         {
           name: "twitter:card",
@@ -122,7 +122,6 @@ export default {
   mounted() {
     // when we revisit the page, we need to register it
     mediumZoom(".markdown img");
-    // alert(this.$router.go(-1));
   },
   updated() {
     // register everytime we refresh the page..
