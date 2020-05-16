@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ramsane.github.io/</id>
     <title>ramsane</title>
-    <updated>2020-05-16T02:36:58.029Z</updated>
+    <updated>2020-05-16T02:44:06.814Z</updated>
     <generator>Gridsome Feed Plugin</generator>
     <link rel="alternate" href="https://ramsane.github.io"/>
     <link rel="self" href="https://ramsane.github.io/feed.atom"/>
