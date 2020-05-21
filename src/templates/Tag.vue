@@ -81,6 +81,11 @@ export default {
         }
       }
     }
+  },
+  metaInfo() {
+    return {
+      title: this.$page.tag.title
+    };
   }
 };
 </script>

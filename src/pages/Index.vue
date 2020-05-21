@@ -53,7 +53,7 @@ export default {
     "article-list": ArticleList
   },
   metaInfo: {
-    title: "Hello, world!"
+    title: "Portfolio"
   }
 };
 </script>

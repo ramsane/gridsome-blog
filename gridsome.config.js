@@ -9,6 +9,7 @@ module.exports = {
   siteDescription: 'A simple portfolio that has few blogs that explains the concepts and ideas from various fields like ComputerVision, MachineLearning',
   siteUrl: 'https://ramsane.github.io',
   titleTemplate: `%s | Ramana Reddy Sane`,
+  icon: './src/icon.svg',
 
   plugins: [{
       use: 'gridsome-plugin-tailwindcss',

@@ -75,6 +75,11 @@ export default {
         }
       }
     }
+  },
+  metaInfo() {
+    return {
+      title: this.$page.category.title
+    };
   }
 };
 </script>

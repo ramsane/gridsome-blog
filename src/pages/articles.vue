@@ -68,6 +68,9 @@ export default {
         }
       }
     }
+  },
+  metaInfo: {
+    title: "Articles"
   }
 };
 </script>
