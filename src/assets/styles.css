@@ -89,7 +89,8 @@ body{
 
 /* for text selection */
 ::selection { /* Code for webkit browsers */
-  @apply bg-primary-500 text-white;
+  @apply bg-primary-500 text-white bg-opacity-75;
+  --text-opacity: unset;
 }
 
 /* katex */
