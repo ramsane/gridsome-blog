@@ -4,7 +4,7 @@
         <title>ramsane</title>
         <link>https://ramsane.github.io</link>
         <description>RamSane Blog</description>
-        <lastBuildDate>Thu, 21 May 2020 15:08:39 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 21 May 2020 15:36:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <atom:link href="https://ramsane.github.io/feed.atom" rel="self" type="application/rss+xml"/>
