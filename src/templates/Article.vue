@@ -17,7 +17,7 @@
           <div class='text-sm font-roboto font-medium text-secondary'>
             <span>{{$page.article.date}}</span>
             <span class=" inline-block px-2">—</span>
-            <g-link class="font-novaround text-primary-400 hover:text-primary-500"
+            <g-link class="font-novaround text-primary-600 hover:text-red-700"
             :to="$page.article.category.path">
               {{$page.article.category.title}}
             </g-link>
@@ -32,7 +32,7 @@
 
         <!-- image -->
         <div class="mx-auto lg:w-1/2">
-          <g-image :src="$page.article.image" 
+          <g-image :src="$page.article.image" :alt="$page.article.title"
           class="rounded-md w-full h-full object-cover animation-fadeIn-from-Bottom lg:animation-fadeIn-from-Right" />        
         </div>
       </div>
@@ -45,7 +45,7 @@
       <!-- TODO: use slots for this tags and use it in the markdown file -->
       <div class="mt-4 mt-8 max-w-screen-md mx-auto">
         <span v-for="tag in $page.article.tags" :key="tag.id" class="tag">
-          <g-link :to="tag.path" class="inline-block px-2 text-primary-400 hover:text-primary-600">{{tag.title}}</g-link>
+          <g-link :to="tag.path" class="inline-block px-2 text-primary-600 hover:text-primary-700">{{tag.title}}</g-link>
           <!-- <span class="saperator text-gray-500">&#x25CF;</span> -->
         </span>
       </div>

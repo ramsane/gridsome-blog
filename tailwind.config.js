@@ -30,6 +30,7 @@ module.exports = {
       textColor: {
         'default': 'var(--default-text-color)', //.text-default
         'secondary': 'var(--secondary-text-color)', // text-secondary - for subtitles etc
+        'excerpt': 'var(--excerpt-text-color)', // text-excerpt
       },
       translate: {
         '-2/3': '-66%',

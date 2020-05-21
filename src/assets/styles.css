@@ -13,6 +13,7 @@
   /* text colors */
   --default-text-color: #424242;  /* for titles */
   --secondary-text-color: #4a5568; /* for subtitles like date and tags */
+  --excerpt-text-color: #4a5568;
 
 }
 
@@ -25,6 +26,7 @@
   /* text colors */
   --default-text-color: #e1e1ff;
   --secondary-text-color: #8aa2c3; /*  for subtitles like date and tags  */
+  --excerpt-text-color: #c1c1e0;
 }
 
 body{
@@ -60,7 +62,7 @@ body{
 
 /* for excerpt */
 .excerpt {
-  @apply my-4 font-roboto text-gray-600 leading-relaxed;
+  @apply my-4 font-roboto text-excerpt leading-relaxed;
 }
 
 /* scroll bar - webkit browsers*/
