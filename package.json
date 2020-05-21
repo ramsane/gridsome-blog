@@ -25,6 +25,7 @@
     "typeface-nova-round": "0.0.71",
     "typeface-nova-square": "0.0.71",
     "typeface-roboto": "0.0.75",
+    "vue-gtag": "^1.6.2",
     "vue-infinite-loading": "^2.4.5"
   },
   "devDependencies": {

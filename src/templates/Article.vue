@@ -4,7 +4,10 @@
     <ClientOnly>
       <read-progress class="w-full bg-transparent sticky z-50 top-0 left-0 h-1" />
     </ClientOnly>
+    
     <!-- back -->
+    <rs-back-button></rs-back-button>
+    
     <!-- title, excerpt and image -->
     <div class="p-4 font-roboto max-w-screen-xl mx-auto">
       <div class="lg:flex items-center lg:space-x-4">

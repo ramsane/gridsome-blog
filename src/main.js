@@ -19,6 +19,10 @@ import '~/assets/nprogress.css';
 // import global css
 import '~/assets/styles.css'
 
+// for gtag
+import VueGtag from "vue-gtag";
+const isProd = process.env.NODE_ENV === "production";
+
 export default function (Vue, {
   router,
   head,
@@ -52,6 +56,15 @@ export default function (Vue, {
     NProgress.done()
     // }
   })
+
+  // for g-tag google analytics
+  Vue.use(VueGtag, {
+    config: {
+      id: process.env.GRIDSOME_TRACKING_ID
+    },
+    enabled: isProd, // to enable it only during production,
+    pageTrackerEnabled: true
+  }, router); //to track all the pages by the router
 
   head.link.push({
     rel: 'stylesheet',
