@@ -43,7 +43,7 @@ body{
   /* max-width: 10rem; */
   @apply bg-primary-500 w-1/3 block my-1 transform duration-200;
 }
-.border-above:hover::before{
+.border-above:hover::before, .border-above:focus::before{
   @apply w-1/2
 }
 

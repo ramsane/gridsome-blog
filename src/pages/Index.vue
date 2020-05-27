@@ -15,7 +15,8 @@
       <!-- Article Card -->
       <article-list :articles="$page.articles.edges" :initial-delay="200"/>
       <!-- all articles link -->
-      <div class="text-center my-4 text-xl font-novaround">
+      <div class="text-center my-4 text-xl font-novaround"
+       v-if="$page.articles.totalCount>6">
         <g-link to="/articles"
          class="inline-block text-primary-500 transition-all duration-200
           p-2 m-3  active:text-primary-600 rounded-t-md
@@ -62,6 +63,7 @@ export default {
 <page-query>
 query LatestArticles {
   articles: allArticle(limit: 6){
+    totalCount
     edges{ node {
      id, category{title path} image(width: 800)
         title date (format: "D MMM Y") author{title path} excerpt tags {id title path} 

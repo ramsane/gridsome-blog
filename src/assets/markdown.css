@@ -1,7 +1,7 @@
 /* purgecss start ignore */
 .markdown {
   /* global styles */
-  @apply font-roboto leading-relaxed text-default text-lg;
+  @apply font-roboto leading-relaxed text-default text-lg font-light;
 
   & > * {
     @apply max-w-screen-md mx-auto;
@@ -24,6 +24,9 @@
     background-color: var(--card-background-color);
     @apply p-4 rounded-md;
   }
+  & span.frac-line{
+    border-color:unset;
+  }
 
   /* to make sure the image is within the container */
   @media (width <= 768px) {
@@ -36,6 +39,9 @@
     @apply mt-4;
   }
 
+  & > li, & li + li, & li{
+    list-style: thai;
+  }
   /* headings */
   & h1, & h2{
     @apply leading-tight font-medium mb-2 mt-6;
@@ -57,7 +63,7 @@
   
   /* links  */
   & strong {
-    @apply font-bold;
+    @apply font-semibold;
   }
   & a {
     @apply text-primary-400;

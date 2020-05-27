@@ -4,8 +4,8 @@
         "slug": "computer-vision"
     },
     {
-        "id": "nlp",
-        "title": "Natural Language processing",
-        "slug": "narural-language-processing"
+        "id": "misc",
+        "title": "Miscellaneous",
+        "slug": "Miscellaneous"
     }
 ]

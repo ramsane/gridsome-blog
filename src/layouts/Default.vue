@@ -36,7 +36,7 @@
       </header>
       </div>
       <!-- content -->
-      <div class="pb-40">
+      <div class="pb-48">
         <slot />
       </div>
       <!-- footer -->

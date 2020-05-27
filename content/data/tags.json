@@ -1,17 +1,9 @@
 [{
-        "id": "t1",
-        "title": "vuejs"
+        "id": "loss_fn",
+        "title": "loss functions"
     },
     {
-        "id": "t2",
+        "id": "math",
         "title": "mathematics"
-    },
-    {
-        "id": "tag3",
-        "title": "tag3"
-    },
-    {
-        "id": "tag4",
-        "title": "tag4"
     }
 ]
