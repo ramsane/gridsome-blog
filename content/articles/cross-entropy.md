@@ -6,7 +6,7 @@ author: ramsane
 tags: ['loss_fn', 'math']
 category: misc
 excerpt: Cross-Entropy is something that you see over and over in machine learning and deep learning. This article explains it from Information theory prespective and try to connect the dots. KL-Divergence is also very important and is used in Decision Trees and generative models like Variational Auto Encoders.
-date:  2020-05-28
+date:  2020-06-01
 ---
 
 In machine learning and deep learning, cross entropy is used extensively as a loss function in a classification problem. In order to understand the it's intuition, we need to understand it's origin from an area of computer science called Information Theory.
