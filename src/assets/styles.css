@@ -11,10 +11,13 @@
   --card-background-color: #ffffff;
   
   /* text colors */
-  --default-text-color: #424242;  /* for titles */
+  --default-text-color: #4a5568;  /* for titles */
   --secondary-text-color: #4a5568; /* for subtitles like date and tags */
   --excerpt-text-color: #4a5568;
 
+  /* table colors */
+  --table-background-color: #ffffff;
+  --thead-background-color: #A3BFFA;
 }
 
 .theme-dark {
@@ -23,10 +26,15 @@
   --header-background-color: #1A202C;
   --content-background-color: #1A202C;
   --card-background-color: #202a3e;  /*#CFD8DC for text color*/
+
   /* text colors */
-  --default-text-color: #e1e1ff;
+  --default-text-color: #d8d8eb;
   --secondary-text-color: #8aa2c3; /*  for subtitles like date and tags  */
   --excerpt-text-color: #c1c1e0;
+
+   /* table colors */
+   --table-background-color: #202a3e;
+   --thead-background-color: #4C51BE;
 }
 
 body{
@@ -93,6 +101,7 @@ body{
 ::selection { /* Code for webkit browsers */
   @apply bg-primary-500 text-white bg-opacity-75;
   --text-opacity: unset;
+  /* background-color: #ff9c7c; */
 }
 
 /* katex */

@@ -1,14 +1,14 @@
 /* purgecss start ignore */
 .markdown {
   /* global styles */
-  @apply font-roboto leading-relaxed text-default text-lg font-light;
+  @apply font-roboto leading-relaxed text-base font-normal text-base;
 
   & > * {
     @apply max-w-screen-md mx-auto;
   }
   /* images */
-  & > img.g-image {
-    @apply max-w-screen-lg mx-auto;
+  &  img.g-image {
+    @apply max-w-screen-lg mx-auto max-w-full my-10;
   }
 
   /* math  */
@@ -36,34 +36,35 @@
   }
   
   & > * + *,  & li + li, & li > p + p {
-    @apply mt-4;
+    @apply mt-5;
   }
 
   & > li, & li + li, & li{
-    list-style: thai;
+    list-style: none;
   }
   /* headings */
   & h1, & h2{
-    @apply leading-tight font-medium mb-2 mt-6;
+    @apply leading-relaxed font-medium mb-2 mt-6;
   }
   & h1{ @apply text-2xl; }
   & h2{ @apply text-xl; }
   & h3, & h4{
-    @apply leading-tight font-medium mt-4 -mb-2;
-  }
+    @apply leading-snug font-medium mt-4 -mb-2;
+  }                                                              
   & h3 { @apply text-lg; }
   & h4 { @apply text-base; }
   /* headings for large devices */
   @media (width >= 1024px) {
-    & h1{ @apply text-3xl; }
-    & h2{ @apply text-2xl; }
+    & h1 { @apply text-3xl; }
+    & h2 { @apply text-2xl; }
     & h3 { @apply text-xl; }
     & h4 { @apply text-lg; }
+    /* & p { @apply text-lg;} */
   }
   
   /* links  */
   & strong {
-    @apply font-semibold;
+    @apply font-bold;
   }
   & a {
     @apply text-primary-400;
@@ -94,5 +95,47 @@
       @apply pl-10;
     }
   }
+
+  /* *********************** Tables ******************************** */
+  & table {
+    @apply shadow;
+    background-color: var(--table-background-color)
+  }
+  & table thead {
+    background-color: var(--thead-background-color);
+    /* @apply text-gray-100; */
+  }
+
+  /* table rows */
+  & table tr {
+    border-color: var(--content-border-color);
+  }
+  /* no border for last row */
+  & table tr:last-child {
+    @apply border-b-0;
+  }
+
+  & table tbody > tr:hover {
+    background-color: var(--page-background-color);
+  }
+
+  /* table heading cells */
+  & table tr th {
+    @apply text-left px-8 py-4 border-r-0;
+  }
+  /* no border for last child */
+  & table tr th:last-child {
+    @apply border-r-0;
+  }
+
+ /* table data cells */
+  & table tr td {
+    @apply  px-8 py-4 border-r-0;
+  }
+  /* no border for last child */
+  & table tr td:last-child {
+    @apply border-r-0;
+  }
 }
+
 /* purgecss end ignore */

@@ -45,7 +45,7 @@
       <!-- TODO: use slots for this tags and use it in the markdown file -->
       <div class="mt-4 mt-8 max-w-screen-md mx-auto">
         <span v-for="tag in $page.article.tags" :key="tag.id" class="tag">
-          <g-link :to="tag.path" class="inline-block px-2 text-primary-600 hover:text-primary-700">{{tag.title}}</g-link>
+          <g-link :to="tag.path" class="inline-block px-2 text-primary-600 hover:text-primary-700">#{{tag.title}}</g-link>
           <!-- <span class="saperator text-gray-500">&#x25CF;</span> -->
         </span>
       </div>
@@ -124,11 +124,11 @@ export default {
   },
   mounted() {
     // when we revisit the page, we need to register it
-    mediumZoom(".markdown img");
+    mediumZoom(".markdown img", { background: "#212530", margin: 48 });
   },
   updated() {
     // register everytime we refresh the page..
-    mediumZoom(".markdown img");
+    mediumZoom(".markdown img", { background: "#212530", margin: 48 });
   }
 };
 </script>
