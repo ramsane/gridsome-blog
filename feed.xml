@@ -4,51 +4,16 @@
         <title>ramsane</title>
         <link>https://ramsane.github.io</link>
         <description>RamSane Blog</description>
-        <lastBuildDate>Thu, 21 May 2020 15:36:14 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 30 May 2020 16:44:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <atom:link href="https://ramsane.github.io/feed.atom" rel="self" type="application/rss+xml"/>
         <item>
-            <title><![CDATA[06. Design and code responsive skeleton screens - Part 22]]></title>
-            <link>https://ramsane.github.io/articles/sixth-article/</link>
-            <guid>https://ramsane.github.io/articles/sixth-article/</guid>
-            <pubDate>Fri, 22 Feb 2019 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[05. Second Article - Part 2]]></title>
-            <link>https://ramsane.github.io/articles/fifth-article/</link>
-            <guid>https://ramsane.github.io/articles/fifth-article/</guid>
-            <pubDate>Mon, 22 Jan 2018 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[04. First Article - Part 2]]></title>
-            <link>https://ramsane.github.io/articles/fourth-article/</link>
-            <guid>https://ramsane.github.io/articles/fourth-article/</guid>
-            <pubDate>Fri, 22 Dec 2017 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[03. Design and code responsive skeleton screens]]></title>
-            <link>https://ramsane.github.io/articles/third-article/</link>
-            <guid>https://ramsane.github.io/articles/third-article/</guid>
-            <pubDate>Wed, 22 Nov 2017 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[02. Second Article]]></title>
-            <link>https://ramsane.github.io/articles/second-article/</link>
-            <guid>https://ramsane.github.io/articles/second-article/</guid>
-            <pubDate>Sun, 22 Oct 2017 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[01. First Article]]></title>
-            <link>https://ramsane.github.io/articles/first-article/</link>
-            <guid>https://ramsane.github.io/articles/first-article/</guid>
-            <pubDate>Fri, 22 Sep 2017 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.]]></content:encoded>
+            <title><![CDATA[Cross Entropy : An intuitive explanation with Entropy and  KL-Divergence]]></title>
+            <link>https://ramsane.github.io/articles/cross-entropy-explained-with-entropy-and-kl-divergence/</link>
+            <guid>https://ramsane.github.io/articles/cross-entropy-explained-with-entropy-and-kl-divergence/</guid>
+            <pubDate>Mon, 01 Jun 2020 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[Cross-Entropy is something that you see over and over in machine learning and deep learning. This article explains it from Information theory prespective and try to connect the dots. KL-Divergence is also very important and is used in Decision Trees and generative models like Variational Auto Encoders.]]></content:encoded>
         </item>
     </channel>
 </rss>

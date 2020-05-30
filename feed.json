@@ -6,46 +6,11 @@
     "description": "RamSane Blog",
     "items": [
         {
-            "id": "https://ramsane.github.io/articles/sixth-article/",
-            "content_html": "The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.",
-            "url": "https://ramsane.github.io/articles/sixth-article/",
-            "title": "06. Design and code responsive skeleton screens - Part 22",
-            "date_modified": "2019-02-22T00:00:00.000Z"
-        },
-        {
-            "id": "https://ramsane.github.io/articles/fifth-article/",
-            "content_html": "The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.",
-            "url": "https://ramsane.github.io/articles/fifth-article/",
-            "title": "05. Second Article - Part 2",
-            "date_modified": "2018-01-22T00:00:00.000Z"
-        },
-        {
-            "id": "https://ramsane.github.io/articles/fourth-article/",
-            "content_html": "The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.",
-            "url": "https://ramsane.github.io/articles/fourth-article/",
-            "title": "04. First Article - Part 2",
-            "date_modified": "2017-12-22T00:00:00.000Z"
-        },
-        {
-            "id": "https://ramsane.github.io/articles/third-article/",
-            "content_html": "The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.",
-            "url": "https://ramsane.github.io/articles/third-article/",
-            "title": "03. Design and code responsive skeleton screens",
-            "date_modified": "2017-11-22T00:00:00.000Z"
-        },
-        {
-            "id": "https://ramsane.github.io/articles/second-article/",
-            "content_html": "The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.",
-            "url": "https://ramsane.github.io/articles/second-article/",
-            "title": "02. Second Article",
-            "date_modified": "2017-10-22T00:00:00.000Z"
-        },
-        {
-            "id": "https://ramsane.github.io/articles/first-article/",
-            "content_html": "The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.",
-            "url": "https://ramsane.github.io/articles/first-article/",
-            "title": "01. First Article",
-            "date_modified": "2017-09-22T00:00:00.000Z"
+            "id": "https://ramsane.github.io/articles/cross-entropy-explained-with-entropy-and-kl-divergence/",
+            "content_html": "Cross-Entropy is something that you see over and over in machine learning and deep learning. This article explains it from Information theory prespective and try to connect the dots. KL-Divergence is also very important and is used in Decision Trees and generative models like Variational Auto Encoders.",
+            "url": "https://ramsane.github.io/articles/cross-entropy-explained-with-entropy-and-kl-divergence/",
+            "title": "Cross Entropy : An intuitive explanation with Entropy and  KL-Divergence",
+            "date_modified": "2020-06-01T00:00:00.000Z"
         }
     ]
 }
