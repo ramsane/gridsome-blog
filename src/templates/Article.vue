@@ -2,11 +2,11 @@
   <Layout class="text-default bg-content">
     <!-- header with title, image and excerpt -->
     <ClientOnly>
-      <read-progress class="w-full bg-transparent sticky z-50 top-0 left-0 h-1" />
+      <read-progress class="w-full bg-transparent fixed z-50 top-0 left-0 h-1" />
     </ClientOnly>
     
     <!-- back -->
-    <rs-back-button></rs-back-button>
+    <rs-back-button class="sticky top-0 z-10"></rs-back-button>
     
     <!-- title, excerpt and image -->
     <div class="p-4 font-roboto max-w-screen-xl mx-auto">
@@ -57,17 +57,6 @@
 <style>
 /* for markdown content */
 @import url("../assets/markdown.css");
-
-/* for read rogress bar */
-#progress-container-el {
-  /* background */
-  background-color: transparent !important;
-  top: calc(100% - 4px) !important;
-}
-#progress-el {
-  /* progress bar */
-  background-color: red !important;
-}
 </style>
 
 <script>

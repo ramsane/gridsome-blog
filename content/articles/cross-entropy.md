@@ -62,7 +62,7 @@ $$
 In this example, let's just say the weather can be any of the 8 states say from sunny to rainy. And it is important to note that all are equally likely.
 
 $$
-\text {Weather states} = \lbrace S_{1},S_{2},...,S_{8}\\
+\text {Weather states} = \lbrace S_{1},S_{2},...,S_{8} \rbrace\\
 P(S_{1}) =P(S_{2}) = \cdots \cdots = P(S_{8}) =\frac{1}{8}
 $$
 
