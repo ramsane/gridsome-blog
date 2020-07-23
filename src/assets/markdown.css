@@ -15,14 +15,13 @@
   & > span.katex-display{
     @apply max-w-screen-md mx-auto;
   }
+  & span.katex-display span.katex{
+    /* background-color: var(--card-background-color); */
+    @apply p-4 rounded-md;
+  }
   /* inline math */
   & span.katex{
-    background-color: var(--card-background-color);
-    @apply px-2 py-1 rounded-md;
-  }
-  & > span.katex-display>span.katex{
-    background-color: var(--card-background-color);
-    @apply p-4 rounded-md;
+    @apply px-2 py-1 mx-2 rounded-md;
   }
   & span.frac-line{
     border-color:unset;
@@ -103,16 +102,17 @@
   }
   & table thead {
     background-color: var(--thead-background-color);
-    /* @apply text-gray-100; */
+    color: var(--thead-text-color);
   }
 
-  /* table rows */
-  & table tr {
-    border-color: var(--content-border-color);
-  }
   /* no border for last row */
   & table tr:last-child {
     @apply border-b-0;
+  }
+
+  /* alternate color for even child */
+  & table tbody tr:nth-child(even) {
+    background-color: var(--table-row-alternate-background);
   }
 
   & table tbody > tr:hover {

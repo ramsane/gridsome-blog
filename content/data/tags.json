@@ -5,5 +5,13 @@
     {
         "id": "math",
         "title": "mathematics"
+    },
+    {
+        "id": "svm",
+        "title": "support vector machines"
+    },
+    {
+        "id": "optimization",
+        "title": "optimization"
     }
 ]

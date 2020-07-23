@@ -1,6 +1,6 @@
 /* styles for themes */
 :root{
-  --dark-background-color: #1A202C;
+  --dark-background-color: #12161d;
 }
 
 .theme-light {
@@ -17,24 +17,28 @@
 
   /* table colors */
   --table-background-color: #ffffff;
-  --thead-background-color: #A3BFFA;
+  --thead-background-color: #323544;
+  --thead-text-color: #dadada;
+  --table-row-alternate-background: #ededed;
 }
 
 .theme-dark {
   /* background colors */
-  --page-background-color: #1A202C;
-  --header-background-color: #1A202C;
-  --content-background-color: #1A202C;
-  --card-background-color: #202a3e;  /*#CFD8DC for text color*/
+  --page-background-color: #12161d;
+  --header-background-color: #12161d;
+  --content-background-color: #12161d;
+  --card-background-color: #20252f;  /*#CFD8DC for text color*/
 
   /* text colors */
-  --default-text-color: #d8d8eb;
+  --default-text-color: #b8b8c7;
   --secondary-text-color: #8aa2c3; /*  for subtitles like date and tags  */
   --excerpt-text-color: #c1c1e0;
 
    /* table colors */
-   --table-background-color: #202a3e;
-   --thead-background-color: #4C51BE;
+   --table-background-color: #1d222c;
+   --thead-background-color: #0e1116;
+   --thead-text-color: #b8b8c7;
+   --table-row-alternate-background: #242933;
 }
 
 body{

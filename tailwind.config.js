@@ -42,6 +42,7 @@ module.exports = {
         novaround: ['Nova Round'],
         roboto: ['Roboto']
       },
+
       // for tailwind animation
       animationDuration: {
         'default': '500ms',
@@ -71,6 +72,13 @@ module.exports = {
       },
       animationFillMode: {
         'default': 'forwards'
+      },
+
+      // shadow
+      boxShadow: {
+        '1': '0px 0px 10px 2px rgba(0,0,0,0.05)',
+        '2': '0px 0px 15px 3px rgba(0,0,0,0.05)',
+        '3': '0px 0px 20px 4px rgba(0,0,0,0.05)',
       },
     },
     animations: {

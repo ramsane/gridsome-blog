@@ -1,10 +1,10 @@
 <template>
   <!-- body and header -->
   <div :class="theme">
-    <div class="text-default transition duration-300 lg:translate-x-0 min-h-screen relative"
+    <div class="text-default transition-transform duration-300 lg:translate-x-0 min-h-screen relative"
       :class="{ '-translate-x-2/3 transform sm:-translate-x-1/3': menuClicked }" >
       <!-- header -->
-      <div :class="[bgColor, textColor]" class="transition duration-300"> 
+      <div :class="[bgColor, textColor]"> 
         <header class="flex justify-between items-center px-4 py-2 lg:max-w-screen-xl lg:mx-auto">
           <!-- link to home page with logo -->
           <g-link to="/" aria-label="Home">
@@ -33,14 +33,14 @@
           >
             <path d="M5 20h40M5 30h40M5 10h40" />
           </svg>
-      </header>
+        </header>
       </div>
       <!-- content -->
       <div class="pb-48">
         <slot />
       </div>
       <!-- footer -->
-      <div class="bg-gray-900 text-gray-500 absolute w-full bottom-0">
+      <div class="bg-card text-default absolute w-full bottom-0">
         <div class="max-w-screen-lg mx-auto py-8 px-4 space-y-6 flex flex-col md:flex-row md:space-y-0 items-center justify-between">
           <!-- copy rights -->
           <div>
@@ -68,7 +68,7 @@
     </div>
     <!-- side nav -->
     <nav
-      class="fixed top-0 right-0 h-full w-2/3 transition duration-300 transform  sm:w-1/3 lg:translate-x-full text-xl text-default"
+      class="fixed top-0 right-0 h-full w-2/3 transition-transform duration-300 transform sm:w-1/3 lg:translate-x-full text-xl text-gray-500"
       :class="[{'translate-x-full': !menuClicked}, bgColor]"
     >
       <rs-theme-switcher class="block p-4 w-3/4 mx-auto" :theme="theme" @themeChanged="updateTheme" />

@@ -1,6 +1,6 @@
 <template>
-  <Layout class="bg-page">
-    <div class="bg-header transition duration-300">
+  <Layout class="bg-page ">
+    <div class="bg-header">
       <!-- heading -->
       <rs-title>Articles</rs-title>
     </div>
