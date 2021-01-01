@@ -7,24 +7,24 @@
     @apply max-w-screen-md mx-auto;
   }
   /* images */
-  &  img.g-image {
-    @apply max-w-screen-lg mx-auto max-w-full my-10;
+  & img.g-image {
+    @apply w-full max-w-screen-lg mx-auto my-10;
   }
 
   /* math  */
-  & > span.katex-display{
+  & > span.katex-display {
     @apply max-w-screen-md mx-auto;
   }
-  & span.katex-display span.katex{
+  & span.katex-display span.katex {
     /* background-color: var(--card-background-color); */
     @apply p-4 rounded-md;
   }
   /* inline math */
-  & span.katex{
-    @apply px-2 py-1 mx-2 rounded-md;
+  & span.katex {
+    @apply py-1 mx-2 rounded-md;
   }
-  & span.frac-line{
-    border-color:unset;
+  & span.frac-line {
+    border-color: unset;
   }
 
   /* to make sure the image is within the container */
@@ -33,34 +33,56 @@
       @apply w-full;
     }
   }
-  
-  & > * + *,  & li + li, & li > p + p {
+
+  & > * + *,
+  & li + li,
+  & li > p + p {
     @apply mt-5;
   }
 
-  & > li, & li + li, & li{
+  & > li,
+  & li + li,
+  & li {
     list-style: none;
   }
   /* headings */
-  & h1, & h2{
+  & h1,
+  & h2 {
     @apply leading-relaxed font-medium mb-2 mt-6;
   }
-  & h1{ @apply text-2xl; }
-  & h2{ @apply text-xl; }
-  & h3, & h4{
+  & h1 {
+    @apply text-2xl;
+  }
+  & h2 {
+    @apply text-xl;
+  }
+  & h3,
+  & h4 {
     @apply leading-snug font-medium mt-4 -mb-2;
-  }                                                              
-  & h3 { @apply text-lg; }
-  & h4 { @apply text-base; }
+  }
+  & h3 {
+    @apply text-lg;
+  }
+  & h4 {
+    @apply text-base;
+  }
   /* headings for large devices */
   @media (width >= 1024px) {
-    & h1 { @apply text-3xl; }
-    & h2 { @apply text-2xl; }
-    & h3 { @apply text-xl; }
-    & h4 { @apply text-lg; }
+    & h1 {
+      @apply text-3xl;
+    }
+    & h2 {
+      @apply text-2xl;
+    }
+    & h3 {
+      @apply text-xl;
+    }
+    & h4 {
+      @apply text-lg;
+    }
     /* & p { @apply text-lg;} */
   }
-  
+
   /* links  */
   & strong {
     @apply font-bold;
@@ -68,7 +90,7 @@
   & a {
     @apply text-primary-400;
   }
-  & a:hover{ 
+  & a:hover {
     @apply text-primary-600;
   }
   & strong a {
@@ -88,7 +110,8 @@
     @apply border-l-4 pl-4 italic border-primary-700;
   }
   /* lists */
-  & ul, & ol {
+  & ul,
+  & ol {
     @apply pl-5;
     @screen sm {
       @apply pl-10;
@@ -98,7 +121,7 @@
   /* *********************** Tables ******************************** */
   & table {
     @apply shadow;
-    background-color: var(--table-background-color)
+    background-color: var(--table-background-color);
   }
   & table thead {
     background-color: var(--thead-background-color);
@@ -128,9 +151,9 @@
     @apply border-r-0;
   }
 
- /* table data cells */
+  /* table data cells */
   & table tr td {
-    @apply  px-8 py-4 border-r-0;
+    @apply px-8 py-4 border-r-0;
   }
   /* no border for last child */
   & table tr td:last-child {
