@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>ramsane</title>
         <link>https://ramsane.github.io</link>
         <description>RamSane Blog</description>
-        <lastBuildDate>Sat, 30 May 2020 16:44:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 06 Jan 2021 12:48:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
-        <atom:link href="https://ramsane.github.io/feed.atom" rel="self" type="application/rss+xml"/>
+        <atom:link href="https://ramsane.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Anatomy of Support Vector Machines : Hard margin and Dual formulation]]></title>
+            <link>https://ramsane.github.io/articles/anatomy-of-suppor-vector-machines-part-1/</link>
+            <guid>https://ramsane.github.io/articles/anatomy-of-suppor-vector-machines-part-1/</guid>
+            <pubDate>Wed, 06 Jan 2021 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[Support Vector machines are one of the most intriguing concept in whole of machine learning. When I was learning about it, I had so many questions and the content on the internet is either incomplete or incorrect. In this series of articles, I tried to answer all the questions that comes to our mind and those that will help you understand the concept better.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Cross Entropy : An intuitive explanation with Entropy and  KL-Divergence]]></title>
             <link>https://ramsane.github.io/articles/cross-entropy-explained-with-entropy-and-kl-divergence/</link>
