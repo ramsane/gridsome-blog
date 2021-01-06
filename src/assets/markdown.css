@@ -8,7 +8,7 @@
   }
   /* images */
   & img.g-image {
-    @apply w-full max-w-screen-lg mx-auto my-10;
+    @apply w-full max-w-screen-lg mx-auto my-10 rounded;
   }
 
   /* math  */
@@ -101,8 +101,11 @@
   & code {
     @apply font-mono text-sm inline px-1 overflow-x-auto;
   }
-  & pre code {
-    @apply block  p-4 rounded;
+  & pre {
+    @apply m-auto bg-gray-900 rounded-md mt-4 tracking-wide;
+    & code {
+      @apply block rounded overflow-visible;
+    }
   }
 
   /* quotes */

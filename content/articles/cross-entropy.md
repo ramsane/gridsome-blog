@@ -1,7 +1,7 @@
 ---
 title: "Cross Entropy : An intuitive explanation with Entropy and  KL-Divergence" 
 slug: cross-entropy-explained-with-entropy-and-kl-divergence
-image: ./images/cross-entropy/cross-entropy.png
+image: ./images/cross-entropy/cross-entropy-banner.png
 author: ramsane
 tags: ['loss_fn', 'math']
 category: misc
